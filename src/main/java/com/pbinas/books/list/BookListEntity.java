@@ -3,7 +3,9 @@ package com.pbinas.books.list;
 import com.pbinas.books.book.BookEntity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.NonNull;
 import lombok.Setter;
+import org.springframework.lang.Nullable;
 
 import javax.persistence.*;
 import java.awt.print.Book;
@@ -21,6 +23,11 @@ public class BookListEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @OneToMany
-    private List<BookEntity> book;
+    @NonNull
+    private String title;
+
+    private String description;
+
+    @ManyToMany
+    private List<BookEntity> books;
 }

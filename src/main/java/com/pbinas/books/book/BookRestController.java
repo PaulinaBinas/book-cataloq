@@ -12,7 +12,7 @@ import java.util.List;
 public class BookRestController {
 
     @Autowired
-    private BookRepository bookRepository;
+    private BookService bookService;
 
     @Autowired
     private AuthorRepository authorRepository;
@@ -21,16 +21,16 @@ public class BookRestController {
     public void addBook(@RequestBody BookEntity book) {
         book.getAuthors().stream().forEach(author -> authorRepository.save(author));
         book.setDateAdded(LocalDate.now());
-        this.bookRepository.save(book);
+        this.bookService.save(book);
     }
 
     @GetMapping
     public BookEntity getBook(@RequestParam long id) {
-        return this.bookRepository.findDistinctById(id);
+        return this.bookService.findById(id);
     }
 
     @GetMapping("/all")
     public List<BookEntity> getAllBooks() {
-        return this.bookRepository.findAll();
+        return this.bookService.findAll();
     }
 }

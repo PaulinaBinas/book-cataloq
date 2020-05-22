@@ -6,17 +6,18 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/login")
-public class LoginRestController {
+@RequestMapping("/user")
+public class UserRestController {
 
     @Autowired
     UserRepository userRepository;
 
     @PostMapping
-    public void addUser(@RequestBody LoginForm loginForm) {
+    public void addUser(@RequestParam(value = "username") String username, @RequestParam(value = "password") String password) {
         UserEntity user = new UserEntity();
-        user.setLogin(loginForm.getLogin());
-        user.setPassword(loginForm.getPassword());
+        user.setId(0);
+        user.setUsername(username);
+        user.setPassword(password);
         userRepository.save(user);
     }
 

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/books.css}" >
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Book cataloq</title>
+</head>
+<body th:style="'background: url('+@{books.jpg}+') no-repeat center;'">
+    <div class="content-box" sec:authorize="isAuthenticated()">
+        <h1>Books</h1>
+        <table>
+            <tr th:each="book : ${books}">
+                <td><span th:text="${book.title}"></span></td>
+            </tr>
+        </table>
+        <form th:action="@{/logout}" method="post">
+            <input type="submit" value="Logout"/>
+        </form>
+    </div>
+    <div class="content-box" sec:authorize="!isAuthenticated()">
+        <p>You are not authorized to access this page!</p>
+        <a href="./"><button>Home</button></a>
+    </div>
+</body>
+</html>
