@@ -1,0 +1,52 @@
+plugins {
+    id 'org.springframework.boot' version '2.1.13.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+    id 'java'
+    id 'findbugs'
+}
+
+group = 'com.pbinas.books'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    compileOnly 'org.projectlombok:lombok'
+    runtimeOnly 'com.h2database:h2:1.4.200'
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.springframework:spring-webmvc'
+    implementation 'org.springframework.security:spring-security-web'
+    implementation 'org.springframework.security:spring-security-config'
+    implementation 'org.postgresql:postgresql'
+    implementation 'org.thymeleaf:thymeleaf:3.0.11.RELEASE'
+    implementation 'org.thymeleaf:thymeleaf-spring5:3.0.11.RELEASE'
+    implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity5'
+
+}
+description ="""
+Project ${project.name} is a web application for storing information about books."""
+
+task hello_world {
+    print "Hello"
+}
+
+findbugsMain {
+    reports {
+        xml.enabled = false
+        html.enabled = true
+    }
+}
+
+
