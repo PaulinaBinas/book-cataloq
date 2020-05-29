@@ -1,5 +1,6 @@
-package com.pbinas.books.login;
+package com.pbinas.books.repository;
 
+import com.pbinas.books.model.entity.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

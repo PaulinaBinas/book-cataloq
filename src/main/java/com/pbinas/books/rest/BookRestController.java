@@ -1,6 +1,8 @@
-package com.pbinas.books.book;
+package com.pbinas.books.rest;
 
-import com.pbinas.books.author.AuthorRepository;
+import com.pbinas.books.repository.AuthorRepository;
+import com.pbinas.books.service.BookService;
+import com.pbinas.books.model.entity.BookEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -32,5 +34,13 @@ public class BookRestController {
     @GetMapping("/all")
     public List<BookEntity> getAllBooks() {
         return this.bookService.findAll();
+    }
+
+    @DeleteMapping
+    public void removeBook(@RequestParam long id) { this.bookService.removeBook(id); }
+
+    @PutMapping("/modify")
+    public void modifyBook(@RequestBody BookEntity book) {
+        this.bookService.modifyBook(book);
     }
 }

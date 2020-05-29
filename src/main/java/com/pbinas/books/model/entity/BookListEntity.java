@@ -1,15 +1,11 @@
-package com.pbinas.books.list;
+package com.pbinas.books.model.entity;
 
-import com.pbinas.books.book.BookEntity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
 import lombok.Setter;
-import org.springframework.lang.Nullable;
 
 import javax.persistence.*;
-import java.awt.print.Book;
-import java.util.ArrayList;
 import java.util.List;
 
 @Entity

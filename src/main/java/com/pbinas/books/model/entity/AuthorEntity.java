@@ -1,4 +1,4 @@
-package com.pbinas.books.author;
+package com.pbinas.books.model.entity;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

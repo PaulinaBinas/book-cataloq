@@ -1,11 +1,10 @@
-package com.pbinas.books.author;
+package com.pbinas.books.repository;
 
-import org.springframework.data.domain.Example;
+import com.pbinas.books.model.entity.AuthorEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
-import java.util.Optional;
 
 @Repository
 public interface AuthorRepository extends JpaRepository<AuthorEntity, Long> {

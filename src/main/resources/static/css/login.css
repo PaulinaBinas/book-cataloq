@@ -41,6 +41,10 @@ h1 {
     color: red;
 }
 
+a {
+    text-decoration: none;
+}
+
 button {
     display: block;
     height: fit-content;
@@ -55,4 +59,8 @@ button {
 button:active {
     border: burlywood;
     box-shadow: rgba(0,0,0,0.7) 1px 1px  4px inset;
+}
+
+button:hover {
+    color: orange;
 }

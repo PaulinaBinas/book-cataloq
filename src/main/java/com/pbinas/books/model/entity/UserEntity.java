@@ -1,6 +1,5 @@
-package com.pbinas.books.login;
+package com.pbinas.books.model.entity;
 
-import com.pbinas.books.list.BookListEntity;
 import lombok.*;
 
 import javax.persistence.*;

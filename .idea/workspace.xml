@@ -2,45 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8beec6d0-2765-4413-81e6-1bab34c64260" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/book/BookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/book/BookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/home/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/login/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/login/RegisterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/books.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_microsoft_sqlserver_mssql_jdbc_7_4_1_jre8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_12_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_24_0_GA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_1_1_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/books.iml" beforeDir="false" afterPath="$PROJECT_DIR$/books.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/author/AuthorRestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/book/BookRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/book/BookRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/list/BookListEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/list/BookListEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/list/BookListRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/list/BookListRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/login/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/login/LoginForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/login/LoginRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/login/UserRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/login/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/login/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/login/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/login/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/author/AuthorEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/model/entity/AuthorEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/author/AuthorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/repository/AuthorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/book/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/gui/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/book/BookEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/model/entity/BookEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/book/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/repository/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/book/BookRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/rest/BookRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/book/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/home/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/gui/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/list/BookListEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/model/entity/BookListEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/list/BookListRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/repository/BookListRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/list/BookListRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/rest/BookListRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/login/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/gui/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/login/LoginForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/login/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/gui/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/login/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/model/entity/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/login/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/login/UserRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/rest/UserRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/books.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/books.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/login.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,10 +54,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="HTML File" />
-        <option value="Class" />
         <option value="CSS File" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -121,7 +106,7 @@
       <module name="books" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.pbinas.books.author.*" />
+          <option name="PATTERN" value="com.pbinas.books.model.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,7 +121,7 @@
       <module name="books" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.pbinas.books.author.*" />
+          <option name="PATTERN" value="com.pbinas.books.model.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -151,10 +136,16 @@
     <configuration name="BooksApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="books" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.pbinas.books.BooksApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.BooksApplicationTests" />
+      <item itemvalue="JUnit.BooksApplicationTests.contextLoads" />
+      <item itemvalue="Spring Boot.BooksApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.BooksApplicationTests.contextLoads" />
@@ -169,51 +160,67 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1918" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590139131819">
+    <state x="1918" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590774662444">
       <screen x="1366" y="0" width="1920" height="1050" />
     </state>
-    <state x="1918" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590139131819" />
-    <state x="2131" y="234" key="#com.intellij.ide.util.MemberChooser" timestamp="1583505103651">
+    <state x="1918" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590774662444" />
+    <state x="2131" y="234" key="#com.intellij.ide.util.MemberChooser" timestamp="1590760035436">
       <screen x="1366" y="0" width="1920" height="1050" />
     </state>
-    <state x="2131" y="234" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1583505103651" />
+    <state x="2131" y="234" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590760035436" />
+    <state x="2122" y="384" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1590758901019">
+      <screen x="1366" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2122" y="384" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590758901019" />
+    <state x="2070" y="6" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1590758877065">
+      <screen x="1366" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2070" y="6" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590758877065" />
     <state x="2106" y="280" key="FileChooserDialogImpl" timestamp="1590136295070">
       <screen x="1366" y="0" width="1920" height="1050" />
     </state>
     <state x="526" y="197" key="FileChooserDialogImpl/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1585488706779" />
     <state x="2106" y="280" key="FileChooserDialogImpl/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590136295070" />
-    <state width="1877" height="401" key="GridCell.Tab.0.bottom" timestamp="1590166044045">
+    <state width="1877" height="400" key="GridCell.Tab.0.bottom" timestamp="1590774666868">
       <screen x="1366" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="401" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590166044045" />
-    <state width="1877" height="401" key="GridCell.Tab.0.center" timestamp="1590166044044">
+    <state width="1323" height="260" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1590578987366" />
+    <state width="1877" height="400" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590774666868" />
+    <state width="1877" height="400" key="GridCell.Tab.0.center" timestamp="1590774666867">
       <screen x="1366" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="401" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590166044044" />
-    <state width="1877" height="401" key="GridCell.Tab.0.left" timestamp="1590166044044">
+    <state width="1323" height="260" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1590578987366" />
+    <state width="1877" height="400" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590774666867" />
+    <state width="1877" height="400" key="GridCell.Tab.0.left" timestamp="1590774666867">
       <screen x="1366" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="401" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590166044044" />
-    <state width="1877" height="401" key="GridCell.Tab.0.right" timestamp="1590166044045">
+    <state width="1323" height="260" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1590578987365" />
+    <state width="1877" height="400" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590774666867" />
+    <state width="1877" height="400" key="GridCell.Tab.0.right" timestamp="1590774666867">
       <screen x="1366" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="401" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590166044045" />
-    <state width="1877" height="401" key="GridCell.Tab.1.bottom" timestamp="1590166044045">
+    <state width="1323" height="260" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1590578987366" />
+    <state width="1877" height="400" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590774666867" />
+    <state width="1877" height="400" key="GridCell.Tab.1.bottom" timestamp="1590774666868">
       <screen x="1366" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="401" key="GridCell.Tab.1.bottom/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590166044045" />
-    <state width="1877" height="401" key="GridCell.Tab.1.center" timestamp="1590166044045">
+    <state width="1323" height="260" key="GridCell.Tab.1.bottom/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1590578987367" />
+    <state width="1877" height="400" key="GridCell.Tab.1.bottom/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590774666868" />
+    <state width="1877" height="400" key="GridCell.Tab.1.center" timestamp="1590774666868">
       <screen x="1366" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="401" key="GridCell.Tab.1.center/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590166044045" />
-    <state width="1877" height="401" key="GridCell.Tab.1.left" timestamp="1590166044045">
+    <state width="1323" height="260" key="GridCell.Tab.1.center/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1590578987366" />
+    <state width="1877" height="400" key="GridCell.Tab.1.center/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590774666868" />
+    <state width="1877" height="400" key="GridCell.Tab.1.left" timestamp="1590774666868">
       <screen x="1366" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="401" key="GridCell.Tab.1.left/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590166044045" />
-    <state width="1877" height="401" key="GridCell.Tab.1.right" timestamp="1590166044045">
+    <state width="1323" height="260" key="GridCell.Tab.1.left/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1590578987366" />
+    <state width="1877" height="400" key="GridCell.Tab.1.left/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590774666868" />
+    <state width="1877" height="400" key="GridCell.Tab.1.right" timestamp="1590774666868">
       <screen x="1366" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="401" key="GridCell.Tab.1.right/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590166044045" />
+    <state width="1323" height="260" key="GridCell.Tab.1.right/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1590578987366" />
+    <state width="1877" height="400" key="GridCell.Tab.1.right/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590774666868" />
     <state width="1877" height="352" key="GridCell.Tab.2.bottom" timestamp="1583517071686">
       <screen x="1366" y="0" width="1920" height="1050" />
     </state>
@@ -238,11 +245,12 @@
       <screen x="1366" y="0" width="1920" height="1050" />
     </state>
     <state x="1827" y="167" key="SettingsEditor/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1583503155794" />
-    <state x="467" y="245" key="com.intellij.ide.util.TipDialog" timestamp="1585488196298">
+    <state x="467" y="245" key="com.intellij.ide.util.TipDialog" timestamp="1590755990672">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="467" y="245" key="com.intellij.ide.util.TipDialog/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1585488196298" />
-    <state x="2022" y="349" key="com.intellij.ide.util.TipDialog/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1584287442710" />
+    <state x="467" y="245" key="com.intellij.ide.util.TipDialog/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1590578871966" />
+    <state x="467" y="245" key="com.intellij.ide.util.TipDialog/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590755990672" />
+    <state x="467" y="245" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1590574375993" />
     <state x="2022" y="123" width="607" height="804" key="find.popup" timestamp="1590143192195">
       <screen x="1366" y="0" width="1920" height="1050" />
     </state>

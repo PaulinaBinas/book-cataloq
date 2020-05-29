@@ -1,7 +1,5 @@
-package com.pbinas.books.book;
+package com.pbinas.books.model.entity;
 
-import com.pbinas.books.author.AuthorEntity;
-import com.pbinas.books.list.BookListEntity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
@@ -11,7 +9,6 @@ import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.Year;
 import java.util.List;
-import java.util.Locale;
 
 @Entity
 @Table(name = "BOOK")

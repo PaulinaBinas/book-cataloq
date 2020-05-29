@@ -1,5 +1,6 @@
-package com.pbinas.books.book;
+package com.pbinas.books.gui;
 
+import com.pbinas.books.service.impl.BookServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -10,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class BookController {
 
     @Autowired
-    private BookService bookService;
+    private BookServiceImpl bookService;
 
     @RequestMapping
     public String login(Model model) {

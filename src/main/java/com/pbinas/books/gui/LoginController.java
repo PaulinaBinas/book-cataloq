@@ -1,4 +1,4 @@
-package com.pbinas.books.login;
+package com.pbinas.books.gui;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

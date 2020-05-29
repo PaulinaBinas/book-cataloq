@@ -1,5 +1,7 @@
-package com.pbinas.books.login;
+package com.pbinas.books.rest;
 
+import com.pbinas.books.model.entity.UserEntity;
+import com.pbinas.books.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
