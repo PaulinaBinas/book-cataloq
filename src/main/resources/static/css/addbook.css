@@ -24,6 +24,14 @@ body {
     background: -webkit-radial-gradient(circle, black 50%, rgba(0,0,0,0));
 }
 
+.content-box p {
+    text-align: center;
+}
+
+.content-box button {
+    margin: 10px auto;
+}
+
 h1 {
     font-family: 'Lobster', cursive !important;
     font-size: 40px !important;
@@ -59,12 +67,6 @@ a .w3-button {
     font-weight: bold;
 }
 
-#plus {
-    position: relative;
-    top: -18px;
-    left: -8px;
-}
-
 button:active {
     border: burlywood;
     box-shadow: rgba(0,0,0,0.7) 1px 1px  4px inset;
@@ -78,42 +80,26 @@ button:hover {
     margin: 10px auto;
 }
 
-.text {
-    text-align: center;
+#add-book-form {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 700px;
+    margin: auto;
 }
 
-table {
-    width: inherit;
+#add-book-form input {
+    flex: 1 0 48%;
+    margin: 5px;
+}
+
+#add-book-form button {
+    flex-grow: 0;
+    flex-shrink: 0;
     margin: 10px auto;
-    padding-left: 40px;
+    width: 300px;
 }
 
-td {
-    padding: 5px 20px;
+.center {
+    margin: 10px auto;
+    width: 300px;
 }
-
-.title {
-    text-align: right;
-}
-
-#logout-form {
-    margin-top: 25px;
-}
-
-table button {
-    height: 30px;
-    width: 30px;
-    margin-left: 10px;
-}
-
-table form {
-    display: inline;
-}
-
-.minus {
-    position: relative;
-    font-size: 40px;
-    top: -26px;
-    left: -7px;
-}
-

@@ -18,4 +18,9 @@ public class BookController {
         model.addAttribute("books", bookService.findAll());
         return "books";
     }
+
+    @RequestMapping("/add")
+    public String addBook() {
+        return "addBook";
+    }
 }

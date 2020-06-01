@@ -1,14 +1,12 @@
 package com.pbinas.books.rest;
 
-import com.pbinas.books.model.entity.BookEntity;
 import com.pbinas.books.model.entity.BookListEntity;
-import com.pbinas.books.repository.BookListRepository;
-import com.pbinas.books.repository.BookRepository;
 import com.pbinas.books.service.BookListService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/list")

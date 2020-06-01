@@ -11,9 +11,9 @@ body {
     width: 100%;
 }
 
-#content-box {
+#title-box {
     margin: auto;
-    height: 50%;
+    height: 40%;
     width: 75%;
     position: fixed;
     top: 40%;
@@ -32,22 +32,9 @@ h1 {
     height: fit-content;
 }
 
-#form-box {
+#auth-button-box {
     height: 50%;
     margin-top: 50px;
-}
-
-input {
-    height: 25px;
-    margin: 10px auto;
-    display: block;
-}
-
-.error {
-    color: red;
-    height: fit-content;
-    margin-bottom: -20px;
-    text-align: center;
 }
 
 a {

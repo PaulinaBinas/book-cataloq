@@ -4,8 +4,11 @@ import com.pbinas.books.repository.AuthorRepository;
 import com.pbinas.books.service.BookService;
 import com.pbinas.books.model.entity.BookEntity;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
+import java.awt.*;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -19,7 +22,7 @@ public class BookRestController {
     @Autowired
     private AuthorRepository authorRepository;
 
-    @PostMapping
+    @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     public void addBook(@RequestBody BookEntity book) {
         book.getAuthors().stream().forEach(author -> authorRepository.save(author));
         book.setDateAdded(LocalDate.now());

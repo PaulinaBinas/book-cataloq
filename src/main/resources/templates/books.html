@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" th:href="@{/css/books.css}" >
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Book cataloq</title>
 </head>
 <body th:style="'background: url('+@{books.jpg}+') no-repeat center;'">
@@ -11,16 +12,29 @@
         <h1>Books</h1>
         <table>
             <tr th:each="book : ${books}">
-                <td><span th:text="${book.title}"></span></td>
+                <td class="title"><span th:text="${book.title}">, </span></td>
+                <td class="author" th:each="author : ${book.authors}">
+                    <span th:text="${author.name}"></span>
+                    <span>, </span>
+                    <span th:text="${author.surname}"></span>
+                    <form>
+                        <button class="w3-button w3-circle w3-red" th:onclick="'remove('+${book.id}+')'">
+                            <span class="minus">-</span>
+                        </button>
+                    </form>
+                </td>
             </tr>
         </table>
-        <form th:action="@{/logout}" method="post">
-            <input type="submit" value="Logout"/>
+        <a href="/books/add"><button class="w3-button w3-circle w3-green" onclick="" title="Add book">
+            <span id="plus">+</span>
+        </button></a>
+        <form th:action="@{/logout}" method="post" id="logout-form">
+            <input id="logout" type="submit" value="Logout"/>
         </form>
     </div>
     <div class="content-box" sec:authorize="!isAuthenticated()">
-        <p>You are not authorized to access this page!</p>
-        <a href="./"><button>Home</button></a>
+        <p class="text">You are not authorized to access this page!</p>
+        <a href="/"><button id="home">Home</button></a>
     </div>
 </body>
 </html>

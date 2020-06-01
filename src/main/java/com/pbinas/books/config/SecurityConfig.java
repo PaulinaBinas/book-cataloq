@@ -7,8 +7,6 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
@@ -39,9 +37,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
 
         http.csrf().disable().cors().and()
-                .formLogin().loginPage("/log-in").failureUrl("/log-in/error").defaultSuccessUrl("/success")
-                .usernameParameter("username").passwordParameter("password")
+                .formLogin().loginPage("/log-in").usernameParameter("username").passwordParameter("password")
+                .failureUrl("/log-in/error").defaultSuccessUrl("/books")
                 .and()
                 .logout().logoutUrl("/logout").logoutSuccessUrl("/");
+    }
+
+    @Autowired
+    public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
+
+        auth.inMemoryAuthentication()
+                .withUser("user").password("password").roles("USER");
     }
 }
