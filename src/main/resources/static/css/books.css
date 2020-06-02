@@ -18,10 +18,11 @@ body {
     padding: 25px;
     width: 75%;
     position: fixed;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: -webkit-radial-gradient(circle, black 50%, rgba(0,0,0,0));
+    height: 90%;
 }
 
 h1 {
@@ -86,6 +87,7 @@ table {
     width: inherit;
     margin: 10px auto;
     padding-left: 40px;
+    height: initial;
 }
 
 td {
@@ -114,6 +116,49 @@ table form {
     position: relative;
     font-size: 40px;
     top: -26px;
-    left: -7px;
+    left: -8px;
+}
+
+#headings {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.5);
+    margin: -25px -25px 25px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ffffd630;
+    height: auto;
+}
+
+#headings h1 {
+    flex-grow: 0;
+    width: 150px;
+    border-bottom: 1px solid rgba(0,0,0,0);
+    transition: 0.8s;
+    margin: auto 10px;
+}
+
+#headings h1:hover {
+    border-bottom: 1px solid gold !important;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.selected {
+    border-color: orange !important;
+    text-shadow: orange 1px 1px;
+}
+
+.list-title {
+    text-align: center;
+}
+
+.text {
+    height: auto;
+}
+
+#lists-table {
+    padding: 0;
 }
 

@@ -9,8 +9,11 @@
 </head>
 <body th:style="'background: url('+@{books.jpg}+') no-repeat center;'">
     <div class="content-box" sec:authorize="isAuthenticated()">
-        <h1>Books</h1>
-        <table>
+        <div id="headings">
+            <h1 class="selected top-button" onClick="changePage('books')">Books</h1>
+            <h1 class="top-button" onClick="changePage('lists')">Lists</h1>
+        </div>
+        <table id="books-table">
             <tr th:each="book : ${books}">
                 <td class="title"><span th:text="${book.title}">, </span></td>
                 <td class="author" th:each="author : ${book.authors}">
@@ -25,6 +28,11 @@
                 </td>
             </tr>
         </table>
+        <table id="lists-table">
+            <tr th:each="list : ${lists}">
+                <td class="list-title"><span th:text="${list.title}">, </span></td>
+            </tr>
+        </table>
         <a href="/books/add"><button class="w3-button w3-circle w3-green" onclick="" title="Add book">
             <span id="plus">+</span>
         </button></a>
@@ -36,5 +44,30 @@
         <p class="text">You are not authorized to access this page!</p>
         <a href="/"><button id="home">Home</button></a>
     </div>
+<script>
+    var currentPage = 'books';
+    document.getElementById("lists-table").style.display = "none";
+    function changePage(page) {
+        if(currentPage != page) {
+            if(page == 'books') {
+                console.log(page);
+                console.log("in books");
+                document.getElementsByClassName("top-button")[0].classList.add("selected");
+                document.getElementsByClassName("top-button")[1].classList.remove("selected");
+                document.getElementById("lists-table").style.display = "none";
+                document.getElementById("books-table").style.display = "table";
+                currentPage = 'books';
+            } else {
+                console.log(page);
+                console.log("in lists");
+                document.getElementsByClassName("top-button")[1].classList.add("selected");
+                document.getElementsByClassName("top-button")[0].classList.remove("selected");
+                document.getElementById("books-table").style.display = "none";
+                document.getElementById("lists-table").style.display = "table";
+                currentPage = 'lists';
+            }
+        }
+    }
+</script>
 </body>
 </html>
