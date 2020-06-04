@@ -63,7 +63,7 @@ a .w3-button {
 #plus {
     position: relative;
     top: -18px;
-    left: -8px;
+    left: -9px;
 }
 
 button:active {
@@ -99,7 +99,12 @@ td {
 }
 
 #logout-form {
-    margin-top: 25px;
+    position: fixed;
+    height: fit-content;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+    margin: 25px auto 0;
 }
 
 table button {
