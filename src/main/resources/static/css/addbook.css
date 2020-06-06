@@ -103,3 +103,9 @@ button:hover {
     margin: 10px auto;
     width: 300px;
 }
+
+#add-list-form input, #add-list-form button {
+    width: 300px;
+    margin: 10px auto;
+    display: block;
+}

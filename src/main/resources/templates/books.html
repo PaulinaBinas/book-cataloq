@@ -14,8 +14,11 @@
             <h1 class="selected top-button" onClick="changePage('books')">Books</h1>
             <h1 class="top-button" onClick="changePage('lists')">Lists</h1>
         </div>
+        <button id="back-button" onclick="hideDetails()"class="w3-button w3-circle w3-white" title="Back" style="display: none">
+            <span id="back"><</span>
+        </button>
         <table id="books-table">
-            <tr th:each="book : ${books}">
+            <tr th:each="book : ${books}" onclick="showBookDetails(this)">
                 <td class="title" style="width: 60%"><span th:text="${book.title}">, </span></td>
                 <td class="author" style="width: 40%" th:each="author : ${book.authors}">
                     <span th:text="${author.name}"></span>
@@ -32,7 +35,7 @@
             </tr>
         </table>
         <table id="lists-table">
-            <tr th:each="list : ${lists}">
+            <tr th:each="list : ${lists}" onclick="showListDetails(this)">
                 <td class="list-title"><span th:text="${list.title}">, </span></td>
                 <td>
                     <form th:onsubmit="'removeList(event,'+${list.id}+')'" method="delete" th:action="@{/list}">
@@ -40,6 +43,45 @@
                             <span class="minus">-</span>
                         </button>
                     </form>
+                </td>
+            </tr>
+        </table>
+        <table id="books-details">
+            <tr th:each="book : ${books}"  style="display: none">
+                <td class="book-details">
+                    <p>Title: <span th:text="${book.title}"></span></p>
+                    <span>Authors: </span>
+                    <span th:each="author : ${book.authors}">
+                        <span th:text="${author.name}"></span>
+                        <span th:text="${author.surname}"></span>
+                    </span>
+                    <p>Description: <span th:text="${book.description}"></span></p>
+                    <p>ISBN: <span th:text="${book.isbn}"></span></p>
+                    <p>Language: <span th:text="${book.language}"></span></p>
+                    <p>Publication year: <span th:text="${book.publicationYear}"></span></p>
+                    <p>Publisher: <span th:text="${book.publisher}"></span></p>
+                    <p>Date added: <span th:text="${book.dateAdded}"></span></p>
+                    <p>Lists:</p>
+                    <ul>
+                        <li th:each="list : ${book.lists}">
+                            <span th:text="${list.title}"></span>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <table id="lists-details">
+            <tr th:each="list : ${lists}"  style="display: none">
+                <td class="list-details">
+                    <p>Title: <span th:text="${list.title}"></span></p>
+                    <p>Description:</p>
+                    <p th:text="${list.description}"></p>
+                    <p>Books:</p>
+                    <ul>
+                        <li th:each="book : ${list.books}">
+                            <span th:text="${book.title}"></span>
+                        </li>
+                    </ul>
                 </td>
             </tr>
         </table>
@@ -59,6 +101,7 @@
     document.getElementById("lists-table").style.display = "none";
     function changePage(page) {
         if(currentPage != page) {
+            hideDetails();
             if(page == 'books') {
                 document.getElementsByClassName("top-button")[0].classList.add("selected");
                 document.getElementsByClassName("top-button")[1].classList.remove("selected");
@@ -74,6 +117,7 @@
                 document.getElementById("add-button").href = "/lists/add"
                 currentPage = 'lists';
             }
+            hideDetails();
         }
     }
 
@@ -100,6 +144,50 @@
             }
         });
     };
+    
+    function showBookDetails(element) {
+        document.getElementById("books-table").style.display = "none";
+        document.getElementById("books-details").childNodes.item(1).childNodes.forEach(e => {
+            if(e.hasChildNodes()) {
+                e.style.display = "none"
+            }
+        });
+        document.getElementById("books-details").childNodes.item(1).childNodes.item(element.rowIndex*2).style.display = "table-row";
+        document.getElementById("back-button").style.display = "inline-block";
+        document.getElementById("add-button").childNodes.item(0).style.display = "none";
+    }
+
+    function showListDetails(element) {
+        document.getElementById("lists-table").style.display = "none";
+        document.getElementById("lists-details").childNodes.item(1).childNodes.forEach(e => {
+            if(e.hasChildNodes()) {
+                e.style.display = "none"
+            }
+        });
+        document.getElementById("lists-details").childNodes.item(1).childNodes.item(element.rowIndex*2).style.display = "table-row";
+        document.getElementById("back-button").style.display = "inline-block";
+        document.getElementById("add-button").childNodes.item(0).style.display = "none";
+    }
+
+    function hideDetails() {
+        if(currentPage == 'books') {
+            document.getElementById("books-details").childNodes.item(1).childNodes.forEach(e => {
+                if(e.hasChildNodes()) {
+                    e.style.display = "none"
+                }
+            });
+            document.getElementById("books-table").style.display = "table";
+        } else {
+            document.getElementById("lists-details").childNodes.item(1).childNodes.forEach(e => {
+                if(e.hasChildNodes()) {
+                    e.style.display = "none"
+                }
+            });
+            document.getElementById("lists-table").style.display = "table";
+        }
+        document.getElementById("back-button").style.display = "none";
+        document.getElementById("add-button").childNodes.item(0).style.display = "block";
+    }
 </script>
 </body>
 </html>

@@ -1,6 +1,7 @@
 package com.pbinas.books.service;
 
 import com.pbinas.books.model.entity.BookEntity;
+import com.pbinas.books.model.entity.BookListEntity;
 
 import java.util.List;
 

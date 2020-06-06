@@ -42,6 +42,8 @@ public class BookListServiceImpl implements BookListService {
             BookListEntity bookList = this.bookListRepository.findDistinctById(listId);
             bookList.getBooks().add(book);
             this.bookListRepository.save(bookList);
+            book.getLists().add(bookList);
+            this.bookService.save(book);
         }
     }
 

@@ -1,6 +1,7 @@
 package com.pbinas.books.service.impl;
 
 import com.pbinas.books.model.entity.BookEntity;
+import com.pbinas.books.model.entity.BookListEntity;
 import com.pbinas.books.repository.BookRepository;
 import com.pbinas.books.service.BookService;
 import org.springframework.beans.BeanUtils;

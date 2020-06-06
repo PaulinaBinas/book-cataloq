@@ -50,7 +50,7 @@ button, input {
     border: none;
 }
 
-a .w3-button {
+a .w3-button, #back-button {
     display: block;
     width: 40px;
     height: 40px;
@@ -92,10 +92,6 @@ table {
 
 td {
     padding: 5px 20px;
-}
-
-.title {
-    text-align: right;
 }
 
 #logout-form {
@@ -165,5 +161,20 @@ table form {
 
 #lists-table {
     padding: 0;
+}
+
+#lists-table tr:hover, #books-table tr:hover {
+    cursor: pointer;
+    color: orange;
+}
+
+#back-button {
+    font-size: inherit;
+    position: absolute;
+    color: black;
+}
+
+#back {
+    color: black;
 }
 

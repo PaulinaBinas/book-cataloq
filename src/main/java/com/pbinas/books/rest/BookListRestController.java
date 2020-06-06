@@ -2,6 +2,7 @@ package com.pbinas.books.rest;
 
 import com.pbinas.books.model.entity.BookListEntity;
 import com.pbinas.books.service.BookListService;
+import com.pbinas.books.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,6 +15,9 @@ public class BookListRestController {
 
     @Autowired
     private BookListService bookListService;
+
+    @Autowired
+    private BookService bookService;
 
 
     @PostMapping
