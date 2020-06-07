@@ -16,4 +16,8 @@ public interface BookService {
     void removeBook(long id);
 
     void modifyBook(BookEntity book);
+
+    void removeList(long id, long listId);
+
+    void removeList(long listId);
 }

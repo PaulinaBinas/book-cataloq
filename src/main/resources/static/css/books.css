@@ -178,3 +178,20 @@ table form {
     color: black;
 }
 
+td.book-details {
+    height: 400px;
+    overflow-y: auto;
+    display: block;
+}
+
+td.book-details p, td.book-details ul, select {
+    height: auto;
+}
+
+#add-to-list-form button {
+    width: auto;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+

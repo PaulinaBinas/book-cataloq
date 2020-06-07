@@ -2,7 +2,6 @@ package com.pbinas.books.service.impl;
 
 import com.pbinas.books.model.entity.BookEntity;
 import com.pbinas.books.model.entity.BookListEntity;
-import com.pbinas.books.model.entity.UserEntity;
 import com.pbinas.books.repository.BookListRepository;
 import com.pbinas.books.service.BookListService;
 import com.pbinas.books.service.BookService;
@@ -10,7 +9,6 @@ import com.pbinas.books.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -26,7 +24,7 @@ public class BookListServiceImpl implements BookListService {
     private UserService userService;
 
     @Override
-    public void addList(BookListEntity list) {
+    public void saveList(BookListEntity list) {
         this.bookListRepository.save(list);
         //UserEntity user = this.userService.getLoggedInUser();
         //user.getLists().add(list);
@@ -40,10 +38,12 @@ public class BookListServiceImpl implements BookListService {
 
         if(book != null) {// && user.getLists().stream().anyMatch(list -> list.getId() == listId)) {
             BookListEntity bookList = this.bookListRepository.findDistinctById(listId);
-            bookList.getBooks().add(book);
-            this.bookListRepository.save(bookList);
-            book.getLists().add(bookList);
-            this.bookService.save(book);
+            if(!bookList.getBooks().stream().anyMatch(b -> b.getId() == bookId)) {
+                bookList.getBooks().add(book);
+                this.bookListRepository.save(bookList);
+                book.getLists().add(bookList);
+                this.bookService.save(book);
+            }
         }
     }
 
@@ -80,5 +80,13 @@ public class BookListServiceImpl implements BookListService {
         BookListEntity list = this.bookListRepository.findDistinctById(id);
         list.setTitle(newName);
         this.bookListRepository.save(list);
+    }
+
+    @Override
+    public void removeBook(long bookId) {
+        this.getAllBookLists().stream().forEach(list -> {
+            list.getBooks().removeIf(book -> book.getId() == bookId);
+            this.saveList(list);
+        });
     }
 }

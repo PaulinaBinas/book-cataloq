@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/list")
@@ -22,12 +21,12 @@ public class BookListRestController {
 
     @PostMapping
     public void addList(@RequestBody BookListEntity bookList) {
-        this.bookListService.addList(bookList);
+        this.bookListService.saveList(bookList);
     }
 
     @PostMapping("/{listId}/addBook/{bookId}")
     public void addBookToList(@PathVariable long bookId, @PathVariable long listId) {
-        this.bookListService.addBookToList(bookId, listId);
+            this.bookListService.addBookToList(bookId, listId);
     }
 
     @GetMapping
@@ -42,12 +41,14 @@ public class BookListRestController {
 
     @DeleteMapping
     public void removeList(@RequestParam long id) {
+        this.bookService.removeList(id);
         this.bookListService.removeList(id);
     }
 
     @DeleteMapping("/{listId}/removeBook/{bookId}")
     public void removeBookFromList (@PathVariable long bookId, @PathVariable long listId) {
         this.bookListService.removeBookFromList(bookId, listId);
+        this.bookService.removeList(bookId, listId);
     }
 
     @PatchMapping

@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface BookListService {
 
-    void addList(BookListEntity list);
+    void saveList(BookListEntity list);
 
     void addBookToList(long bookId, long listId);
 
@@ -19,4 +19,6 @@ public interface BookListService {
     void removeBookFromList(long bookId, long listId);
 
     void renameList(long id,String newName);
+
+    void removeBook(long bookId);
 }

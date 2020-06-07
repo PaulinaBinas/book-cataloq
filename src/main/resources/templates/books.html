@@ -35,8 +35,8 @@
             </tr>
         </table>
         <table id="lists-table">
-            <tr th:each="list : ${lists}" onclick="showListDetails(this)">
-                <td class="list-title"><span th:text="${list.title}">, </span></td>
+            <tr th:each="list : ${lists}">
+                <td class="list-title" onclick="showListDetails(this)"><span th:text="${list.title}">, </span></td>
                 <td>
                     <form th:onsubmit="'removeList(event,'+${list.id}+')'" method="delete" th:action="@{/list}">
                         <button class="w3-button w3-circle w3-red" type="submit">
@@ -65,8 +65,24 @@
                     <ul>
                         <li th:each="list : ${book.lists}">
                             <span th:text="${list.title}"></span>
+                            <span>
+                                <button class="w3-button w3-circle w3-red" th:onclick="'removeBookFromList('+${book.id}+','+${list.id}+')'">
+                                    <span class="minus">-</span>
+                                </button>
+                            </span>
                         </li>
                     </ul>
+                    <form id="add-to-list-form" onsubmit="addBookToList(event)" method="post" th:action="@{/list}">
+                        <input style="display: none" id="bookId" name="bookId" th:value="${book.id}">
+                        <label>Add book to list: </label>
+                        <select name="listId" id="listId" required>
+                            <option value="">None</option>
+                            <option th:each="list : ${lists}" th:value="${list.id}">
+                                <span th:text="${list.title}"></span>
+                            </option>
+                        </select>
+                        <button type="submit" class="w3-button w3-green">Add</button>
+                    </form>
                 </td>
             </tr>
         </table>
@@ -164,7 +180,7 @@
                 e.style.display = "none"
             }
         });
-        document.getElementById("lists-details").childNodes.item(1).childNodes.item(element.rowIndex*2).style.display = "table-row";
+        document.getElementById("lists-details").childNodes.item(1).childNodes.item(element.parentNode.rowIndex*2).style.display = "table-row";
         document.getElementById("back-button").style.display = "inline-block";
         document.getElementById("add-button").childNodes.item(0).style.display = "none";
     }
@@ -187,6 +203,40 @@
         }
         document.getElementById("back-button").style.display = "none";
         document.getElementById("add-button").childNodes.item(0).style.display = "block";
+    }
+
+    function addBookToList(e) {
+        e.preventDefault();
+        var bookId;
+        var index;
+        var listId;
+        document.getElementById("books-details").childNodes.item(1).childNodes.item(3)
+        document.getElementById("books-details").childNodes.item(1).childNodes.forEach(e => {
+            if(e != null && e.style != null && e.style.display != "none") {
+                bookId = e.childNodes.item(1).childNodes.item(23).childNodes.item(1).value;
+                index = e.childNodes.item(1).childNodes.item(23).childNodes.item(5).selectedIndex;
+                listId = e.childNodes.item(1).childNodes.item(23).childNodes.item(5).options[index].value;
+            }
+        });
+        var postUrl = 'http://localhost:8080/list/' + listId + '/addBook/' + bookId;
+        $.ajax({
+            url: postUrl,
+            type: 'POST',
+            success: function () {
+                location.reload();
+            }
+        });
+    }
+
+    function removeBookFromList(bookId, listId) {
+        var deleteUrl = 'http://localhost:8080/list/' + listId + '/removeBook/' + bookId;
+        $.ajax({
+            url: deleteUrl,
+            type: 'DELETE',
+            success: function () {
+                location.reload();
+            }
+        });
     }
 </script>
 </body>

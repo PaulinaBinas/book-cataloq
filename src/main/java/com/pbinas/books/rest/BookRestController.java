@@ -40,7 +40,10 @@ public class BookRestController {
     }
 
     @DeleteMapping
-    public void removeBook(@RequestParam long id) { this.bookService.removeBook(id); }
+    public void removeBook(@RequestParam long id) {
+
+        this.bookService.removeBook(id);
+    }
 
     @PutMapping("/modify")
     public void modifyBook(@RequestBody BookEntity book) {
