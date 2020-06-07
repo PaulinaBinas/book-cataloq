@@ -1,12 +1,15 @@
 package com.pbinas.books.rest;
 
+import com.pbinas.books.model.dto.BookListTo;
 import com.pbinas.books.model.entity.BookListEntity;
 import com.pbinas.books.service.BookListService;
 import com.pbinas.books.service.BookService;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/list")
@@ -16,12 +19,11 @@ public class BookListRestController {
     private BookListService bookListService;
 
     @Autowired
-    private BookService bookService;
-
+    private ModelMapper mapper;
 
     @PostMapping
-    public void addList(@RequestBody BookListEntity bookList) {
-        this.bookListService.saveList(bookList);
+    public void addList(@RequestBody BookListTo bookList) {
+        this.bookListService.saveList(convertToEntity(bookList));
     }
 
     @PostMapping("/{listId}/addBook/{bookId}")
@@ -30,29 +32,35 @@ public class BookListRestController {
     }
 
     @GetMapping
-    public BookListEntity getBookList(@RequestParam long id) {
-        return this.bookListService.getBookList(id);
+    public BookListTo getBookList(@RequestParam long id) {
+        return convertToDto(this.bookListService.getBookList(id));
     }
 
     @GetMapping("/all")
-    public List<BookListEntity> getAllBookLists() {
-        return this.bookListService.getAllBookLists();
+    public List<BookListTo> getAllBookLists() {
+        return this.bookListService.getAllBookLists().stream().map(this::convertToDto).collect(Collectors.toList());
     }
 
     @DeleteMapping
     public void removeList(@RequestParam long id) {
-        this.bookService.removeList(id);
         this.bookListService.removeList(id);
     }
 
     @DeleteMapping("/{listId}/removeBook/{bookId}")
     public void removeBookFromList (@PathVariable long bookId, @PathVariable long listId) {
         this.bookListService.removeBookFromList(bookId, listId);
-        this.bookService.removeList(bookId, listId);
     }
 
     @PatchMapping
     public void renameList(@RequestParam long id, @RequestParam String newName) {
         this.bookListService.renameList(id, newName);
+    }
+
+    private BookListTo convertToDto(BookListEntity bookListEntity) {
+        return this.mapper.map(bookListEntity, BookListTo.class);
+    }
+
+    private BookListEntity convertToEntity(BookListTo bookListTo) {
+        return this.mapper.map(bookListTo, BookListEntity.class);
     }
 }

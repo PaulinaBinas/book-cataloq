@@ -1,18 +1,14 @@
 package com.pbinas.books.model.entity;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.NonNull;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.List;
 
+@Data
 @Entity
 @Table(name = "BOOKLIST")
 @NoArgsConstructor
-@Getter
-@Setter
 public class BookListEntity {
 
     @Id

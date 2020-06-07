@@ -5,11 +5,10 @@ import lombok.*;
 import javax.persistence.*;
 import java.util.List;
 
+@Data
 @Entity
 @Table(name = "USERS")
 @NoArgsConstructor
-@Getter
-@Setter
 public class UserEntity {
 
     @Id

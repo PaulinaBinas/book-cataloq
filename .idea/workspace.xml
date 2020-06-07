@@ -3,14 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="8beec6d0-2765-4413-81e6-1bab34c64260" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/books.iml" beforeDir="false" afterPath="$PROJECT_DIR$/books.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/model/entity/AuthorEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/model/entity/AuthorEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/model/entity/BookEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/model/entity/BookEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/model/entity/BookListEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/model/entity/BookListEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/model/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/model/entity/UserEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/rest/BookListRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/rest/BookListRestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/rest/BookRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/rest/BookRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/service/BookListService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/service/BookListService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/rest/UserRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/rest/UserRestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/service/impl/BookListServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/service/impl/BookListServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/service/impl/BookServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/books.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/books.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/books.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/books.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,10 +48,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="CSS File" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -90,6 +96,10 @@
     <property name="show.unlinked.gradle.project.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.pbinas.books.config" />
+      <recent name="com.pbinas.books" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\STUDIES\MASTERS_SEM_4\MonographicSubject\books\book-cataloq\src\main\resources\templates" />
       <recent name="F:\STUDIES\MASTERS_SEM_4\MonographicSubject\books\book-cataloq\src\main\resources\static\css" />
@@ -101,7 +111,7 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.BooksApplication">
+  <component name="RunManager" selected="JUnit.UserTest.addNewUserTest">
     <configuration name="F:/STUDIES/MASTERS_SEM_4/MonographicSubject/books/book-cataloq/build.gradle (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -167,6 +177,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserTest.addNewUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="books" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pbinas.books.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.pbinas.books" />
+      <option name="MAIN_CLASS_NAME" value="com.pbinas.books.UserTest" />
+      <option name="METHOD_NAME" value="addNewUserTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BooksApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="books" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.pbinas.books.BooksApplication" />
@@ -181,9 +207,11 @@
       <item itemvalue="JUnit.BooksApplicationTests" />
       <item itemvalue="JUnit.BooksApplicationTests.contextLoads" />
       <item itemvalue="Spring Boot.BooksApplication" />
+      <item itemvalue="JUnit.UserTest.addNewUserTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserTest.addNewUserTest" />
         <item itemvalue="Gradle.F:/STUDIES/MASTERS_SEM_4/MonographicSubject/books/book-cataloq/build.gradle (1)" />
         <item itemvalue="Gradle.F:/STUDIES/MASTERS_SEM_4/MonographicSubject/books/book-cataloq/build.gradle" />
         <item itemvalue="JUnit.BooksApplicationTests.contextLoads" />
@@ -198,22 +226,28 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="275" y="27" key="#Assign_Data_Sources" timestamp="1591542084120">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="27" key="#Assign_Data_Sources/0.0.1366.738@0.0.1366.738" timestamp="1591542084120" />
     <state x="1918" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591026143399">
       <screen x="1366" y="0" width="1920" height="1050" />
     </state>
     <state x="1918" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591026143399" />
-    <state x="2131" y="234" key="#com.intellij.ide.util.MemberChooser" timestamp="1590929079950">
-      <screen x="1366" y="0" width="1920" height="1050" />
+    <state x="544" y="157" key="#com.intellij.ide.util.MemberChooser" timestamp="1591542601236">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="2131" y="234" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590929079950" />
+    <state x="544" y="157" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1591542601236" />
     <state x="2006" y="261" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1591289607301">
       <screen x="1366" y="0" width="1920" height="1050" />
     </state>
     <state x="2006" y="261" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591289607301" />
-    <state x="2122" y="384" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1590758901019">
-      <screen x="1366" y="0" width="1920" height="1050" />
+    <state x="538" y="270" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1591544984725">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="2122" y="384" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590758901019" />
+    <state x="538" y="270" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.738@0.0.1366.738" timestamp="1591544984725" />
     <state x="2070" y="6" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1590758877065">
       <screen x="1366" y="0" width="1920" height="1050" />
     </state>
@@ -223,30 +257,30 @@
     </state>
     <state x="526" y="197" key="FileChooserDialogImpl/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1585488706779" />
     <state x="2106" y="280" key="FileChooserDialogImpl/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590136295070" />
-    <state width="1323" height="252" key="GridCell.Tab.0.bottom" timestamp="1591537699113">
+    <state width="1323" height="252" key="GridCell.Tab.0.bottom" timestamp="1591545166238">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1323" height="260" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1590578987366" />
     <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591302522783" />
-    <state width="1323" height="252" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1591537699113" />
-    <state width="1323" height="252" key="GridCell.Tab.0.center" timestamp="1591537699113">
+    <state width="1323" height="252" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1591545166238" />
+    <state width="1323" height="252" key="GridCell.Tab.0.center" timestamp="1591545166238">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1323" height="260" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1590578987366" />
     <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591302522783" />
-    <state width="1323" height="252" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1591537699113" />
-    <state width="1323" height="252" key="GridCell.Tab.0.left" timestamp="1591537699113">
+    <state width="1323" height="252" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1591545166238" />
+    <state width="1323" height="252" key="GridCell.Tab.0.left" timestamp="1591545166238">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1323" height="260" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1590578987365" />
     <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591302522783" />
-    <state width="1323" height="252" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1591537699113" />
-    <state width="1323" height="252" key="GridCell.Tab.0.right" timestamp="1591537699113">
+    <state width="1323" height="252" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1591545166238" />
+    <state width="1323" height="252" key="GridCell.Tab.0.right" timestamp="1591545166238">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1323" height="260" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1590578987366" />
     <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591302522783" />
-    <state width="1323" height="252" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1591537699113" />
+    <state width="1323" height="252" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1591545166238" />
     <state width="1323" height="252" key="GridCell.Tab.1.bottom" timestamp="1591537699114">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -324,16 +358,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/pbinas/books/service/impl/UserServiceImpl.java</url>
-          <line>30</line>
+          <line>41</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/pbinas/books/rest/BookRestController.java</url>
-          <line>26</line>
-          <properties>
-            <option name="lambda-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

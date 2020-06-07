@@ -1,16 +1,13 @@
 package com.pbinas.books.model.entity;
 
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
-
 import javax.persistence.*;
 
+@Data
 @Entity
 @Table(name="AUTHOR")
 @NoArgsConstructor
-@Getter
-@Setter
 public class AuthorEntity {
 
     @Id

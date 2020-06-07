@@ -1,20 +1,16 @@
 package com.pbinas.books.model.entity;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.NonNull;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.Year;
 import java.util.List;
 
+@Data
 @Entity
 @Table(name = "BOOK")
 @NoArgsConstructor
-@Getter
-@Setter
 public class BookEntity {
 
     @Id

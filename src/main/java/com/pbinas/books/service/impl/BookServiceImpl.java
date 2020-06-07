@@ -3,12 +3,14 @@ package com.pbinas.books.service.impl;
 import com.pbinas.books.model.entity.BookEntity;
 import com.pbinas.books.model.entity.BookListEntity;
 import com.pbinas.books.repository.BookRepository;
+import com.pbinas.books.service.AuthorService;
 import com.pbinas.books.service.BookListService;
 import com.pbinas.books.service.BookService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @Service
@@ -19,6 +21,9 @@ public class BookServiceImpl implements BookService {
 
     @Autowired
     private BookListService bookListService;
+
+    @Autowired
+    private AuthorService authorService;
 
     @Override
     public List<BookEntity> findAll() {
@@ -33,6 +38,13 @@ public class BookServiceImpl implements BookService {
     @Override
     public void save(BookEntity book) {
         this.bookRepository.save(book);
+    }
+
+    @Override
+    public void addBook(BookEntity book) {
+        book.getAuthors().stream().forEach(author -> authorService.save(author));
+        book.setDateAdded(LocalDate.now());
+        this.save(book);
     }
 
     @Override

@@ -11,6 +11,8 @@ public interface BookService {
 
     BookEntity findById(long id);
 
+    void addBook(BookEntity book);
+
     void save(BookEntity book);
 
     void removeBook(long id);
