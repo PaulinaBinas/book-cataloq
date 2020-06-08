@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8beec6d0-2765-4413-81e6-1bab34c64260" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/pbinas/books/unitTests/BookUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pbinas/books/unitTests/BookUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/books.iml" beforeDir="false" afterPath="$PROJECT_DIR$/books.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/pbinas/books/unitTests/AbstractUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pbinas/books/unitTests/AbstractUnitTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,8 +90,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.pbinas.books.config" />
       <recent name="com.pbinas.books" />
+      <recent name="com.pbinas.books.config" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\STUDIES\MASTERS_SEM_4\MonographicSubject\books\book-cataloq\src\main\resources\templates" />
@@ -98,69 +104,65 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.com.pbinas.books.unitTests in books">
-    <configuration name="BookUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.UserIntegrationTest">
+    <configuration name="UserIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="books" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.pbinas.books.unitTests.*" />
+          <option name="PATTERN" value="com.pbinas.books.integrationTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.pbinas.books.unitTests" />
-      <option name="MAIN_CLASS_NAME" value="com.pbinas.books.unitTests.BookUnitTest" />
-      <option name="METHOD_NAME" value="removeListFromAllBooks" />
-      <option name="TEST_OBJECT" value="uniqueId" />
-      <uniqueIds>
-        <uniqueId value="[engine:junit-jupiter]/[class:com.pbinas.books.unitTests.BookUnitTest]" />
-      </uniqueIds>
+      <option name="PACKAGE_NAME" value="com.pbinas.books.integrationTests" />
+      <option name="MAIN_CLASS_NAME" value="com.pbinas.books.integrationTests.UserIntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookUnitTest.modifyBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserIntegrationTest.addUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="books" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.pbinas.books.unitTests.*" />
+          <option name="PATTERN" value="com.pbinas.books.integrationTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.pbinas.books.unitTests" />
-      <option name="MAIN_CLASS_NAME" value="com.pbinas.books.unitTests.BookUnitTest" />
-      <option name="METHOD_NAME" value="modifyBook" />
+      <option name="PACKAGE_NAME" value="com.pbinas.books.integrationTests" />
+      <option name="MAIN_CLASS_NAME" value="com.pbinas.books.integrationTests.UserIntegrationTest" />
+      <option name="METHOD_NAME" value="addUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookUnitTest.removeListFromAllBooks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserIntegrationTest.getAllUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="books" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.pbinas.books.unitTests.*" />
+          <option name="PATTERN" value="com.pbinas.books.integrationTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.pbinas.books.unitTests" />
-      <option name="MAIN_CLASS_NAME" value="com.pbinas.books.unitTests.BookUnitTest" />
-      <option name="METHOD_NAME" value="removeListFromAllBooks" />
+      <option name="PACKAGE_NAME" value="com.pbinas.books.integrationTests" />
+      <option name="MAIN_CLASS_NAME" value="com.pbinas.books.integrationTests.UserIntegrationTest" />
+      <option name="METHOD_NAME" value="getAllUsers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookUnitTest.removeListFromBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserIntegrationTest.getUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="books" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.pbinas.books.unitTests.*" />
+          <option name="PATTERN" value="com.pbinas.books.integrationTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.pbinas.books.unitTests" />
-      <option name="MAIN_CLASS_NAME" value="com.pbinas.books.unitTests.BookUnitTest" />
-      <option name="METHOD_NAME" value="removeListFromBook" />
+      <option name="PACKAGE_NAME" value="com.pbinas.books.integrationTests" />
+      <option name="MAIN_CLASS_NAME" value="com.pbinas.books.integrationTests.UserIntegrationTest" />
+      <option name="METHOD_NAME" value="getUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -190,19 +192,19 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.BooksApplication" />
-      <item itemvalue="JUnit.BookUnitTest.modifyBook" />
-      <item itemvalue="JUnit.BookUnitTest.removeListFromBook" />
-      <item itemvalue="JUnit.BookUnitTest.removeListFromAllBooks" />
-      <item itemvalue="JUnit.BookUnitTest" />
       <item itemvalue="JUnit.com.pbinas.books.unitTests in books" />
+      <item itemvalue="JUnit.UserIntegrationTest" />
+      <item itemvalue="JUnit.UserIntegrationTest.addUser" />
+      <item itemvalue="JUnit.UserIntegrationTest.getUser" />
+      <item itemvalue="JUnit.UserIntegrationTest.getAllUsers" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserIntegrationTest" />
+        <item itemvalue="JUnit.UserIntegrationTest.getAllUsers" />
+        <item itemvalue="JUnit.UserIntegrationTest.getUser" />
+        <item itemvalue="JUnit.UserIntegrationTest.addUser" />
         <item itemvalue="JUnit.com.pbinas.books.unitTests in books" />
-        <item itemvalue="JUnit.BookUnitTest" />
-        <item itemvalue="JUnit.BookUnitTest.removeListFromAllBooks" />
-        <item itemvalue="JUnit.BookUnitTest.removeListFromBook" />
-        <item itemvalue="JUnit.BookUnitTest.modifyBook" />
       </list>
     </recent_temporary>
   </component>
@@ -232,9 +234,10 @@
     </state>
     <state x="455" y="183" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591639038113" />
     <state x="2006" y="261" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591289607301" />
-    <state x="538" y="270" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1591544984725">
+    <state x="538" y="270" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1591653130832">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
+    <state x="538" y="270" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591653130832" />
     <state x="2122" y="384" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590758901019" />
     <state x="538" y="270" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.738@0.0.1366.738" timestamp="1591544984725" />
     <state x="501" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1591637553555">
@@ -247,52 +250,52 @@
     </state>
     <state x="526" y="197" key="FileChooserDialogImpl/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1585488706779" />
     <state x="2106" y="280" key="FileChooserDialogImpl/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590136295070" />
-    <state width="1323" height="166" key="GridCell.Tab.0.bottom" timestamp="1591652626256">
+    <state width="1323" height="267" key="GridCell.Tab.0.bottom" timestamp="1591654706447">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="166" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591652626256" />
+    <state width="1323" height="267" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591654706447" />
     <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591302522783" />
     <state width="1323" height="252" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1591545166238" />
-    <state width="1323" height="166" key="GridCell.Tab.0.center" timestamp="1591652626255">
+    <state width="1323" height="267" key="GridCell.Tab.0.center" timestamp="1591654706446">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="166" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591652626255" />
+    <state width="1323" height="267" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591654706446" />
     <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591302522783" />
     <state width="1323" height="252" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1591545166238" />
-    <state width="1323" height="166" key="GridCell.Tab.0.left" timestamp="1591652626255">
+    <state width="1323" height="267" key="GridCell.Tab.0.left" timestamp="1591654706446">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="166" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591652626255" />
+    <state width="1323" height="267" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591654706446" />
     <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591302522783" />
     <state width="1323" height="252" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1591545166238" />
-    <state width="1323" height="166" key="GridCell.Tab.0.right" timestamp="1591652626256">
+    <state width="1323" height="267" key="GridCell.Tab.0.right" timestamp="1591654706447">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="166" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591652626256" />
+    <state width="1323" height="267" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591654706447" />
     <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591302522783" />
     <state width="1323" height="252" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1591545166238" />
-    <state width="1323" height="227" key="GridCell.Tab.1.bottom" timestamp="1591649057984">
+    <state width="1323" height="227" key="GridCell.Tab.1.bottom" timestamp="1591653969056">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="227" key="GridCell.Tab.1.bottom/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591649057984" />
+    <state width="1323" height="227" key="GridCell.Tab.1.bottom/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591653969056" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591302522783" />
     <state width="1323" height="252" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1591537699114" />
-    <state width="1323" height="227" key="GridCell.Tab.1.center" timestamp="1591649057984">
+    <state width="1323" height="227" key="GridCell.Tab.1.center" timestamp="1591653969056">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="227" key="GridCell.Tab.1.center/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591649057984" />
+    <state width="1323" height="227" key="GridCell.Tab.1.center/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591653969056" />
     <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591302522783" />
     <state width="1323" height="252" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1591537699113" />
-    <state width="1323" height="227" key="GridCell.Tab.1.left" timestamp="1591649057984">
+    <state width="1323" height="227" key="GridCell.Tab.1.left" timestamp="1591653969055">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="227" key="GridCell.Tab.1.left/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591649057984" />
+    <state width="1323" height="227" key="GridCell.Tab.1.left/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591653969055" />
     <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591302522783" />
     <state width="1323" height="252" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1591537699113" />
-    <state width="1323" height="227" key="GridCell.Tab.1.right" timestamp="1591649057984">
+    <state width="1323" height="227" key="GridCell.Tab.1.right" timestamp="1591653969056">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="227" key="GridCell.Tab.1.right/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591649057984" />
+    <state width="1323" height="227" key="GridCell.Tab.1.right/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591653969056" />
     <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591302522783" />
     <state width="1323" height="252" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1591537699114" />
     <state width="1877" height="352" key="GridCell.Tab.2.bottom" timestamp="1591302522783">
@@ -369,6 +372,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/pbinas/books/service/impl/AuthorServiceImpl.java</url>
           <line>16</line>
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/pbinas/books/integrationTests/UserIntegrationTest.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
