@@ -29,12 +29,12 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void addUser(String username, String password) {
+    public UserEntity addUser(String username, String password) {
         UserEntity user = new UserEntity();
         user.setId(0);
         user.setUsername(username);
         user.setPassword(password);
-        this.userRepository.save(user);
+        return this.userRepository.save(user);
     }
 
     @Override

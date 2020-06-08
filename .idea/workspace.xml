@@ -2,21 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8beec6d0-2765-4413-81e6-1bab34c64260" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/pbinas/books/unitTests/AbstractUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/pbinas/books/unitTests/BookListUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/pbinas/books/unitTests/BookUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/pbinas/books/unitTests/UserUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/books.iml" beforeDir="false" afterPath="$PROJECT_DIR$/books.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/model/entity/AuthorEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/model/entity/AuthorEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/model/entity/BookEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/model/entity/BookEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/model/entity/BookListEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/model/entity/BookListEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/model/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/model/entity/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/rest/BookListRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/rest/BookListRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/rest/BookRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/rest/BookRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/rest/UserRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/rest/UserRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/service/BookService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/service/impl/BookListServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/service/impl/BookListServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/service/impl/BookServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/pbinas/books/AbstractTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/pbinas/books/BookListTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/pbinas/books/BookTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/pbinas/books/UserTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/pbinas/books/config/TestConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pbinas/books/config/TestConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +91,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="F:/Patsie/hello-world" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="spring.boot" />
     <property name="show.unlinked.gradle.project.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -111,82 +110,32 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserTest.addNewUserTest">
-    <configuration name="F:/STUDIES/MASTERS_SEM_4/MonographicSubject/books/book-cataloq/build.gradle (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/build.gradle" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="F:/STUDIES/MASTERS_SEM_4/MonographicSubject/books/book-cataloq/build.gradle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/build.gradle" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="BooksApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.UserUnitTest">
+    <configuration name="UserUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="books" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.pbinas.books.model.entity.*" />
+          <option name="PATTERN" value="com.pbinas.books.unitTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.pbinas.books" />
-      <option name="MAIN_CLASS_NAME" value="com.pbinas.books.BooksApplicationTests" />
+      <option name="PACKAGE_NAME" value="com.pbinas.books.unitTests" />
+      <option name="MAIN_CLASS_NAME" value="com.pbinas.books.unitTests.UserUnitTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BooksApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserUnitTest.addNewUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="books" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.pbinas.books.model.entity.*" />
+          <option name="PATTERN" value="com.pbinas.books.unitTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.pbinas.books" />
-      <option name="MAIN_CLASS_NAME" value="com.pbinas.books.BooksApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest.addNewUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="books" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.pbinas.books.config.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.pbinas.books" />
-      <option name="MAIN_CLASS_NAME" value="com.pbinas.books.UserTest" />
+      <option name="PACKAGE_NAME" value="com.pbinas.books.unitTests" />
+      <option name="MAIN_CLASS_NAME" value="com.pbinas.books.unitTests.UserUnitTest" />
       <option name="METHOD_NAME" value="addNewUserTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -202,20 +151,14 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.F:/STUDIES/MASTERS_SEM_4/MonographicSubject/books/book-cataloq/build.gradle" />
-      <item itemvalue="Gradle.F:/STUDIES/MASTERS_SEM_4/MonographicSubject/books/book-cataloq/build.gradle (1)" />
-      <item itemvalue="JUnit.BooksApplicationTests" />
-      <item itemvalue="JUnit.BooksApplicationTests.contextLoads" />
       <item itemvalue="Spring Boot.BooksApplication" />
-      <item itemvalue="JUnit.UserTest.addNewUserTest" />
+      <item itemvalue="JUnit.UserUnitTest.addNewUserTest" />
+      <item itemvalue="JUnit.UserUnitTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserTest.addNewUserTest" />
-        <item itemvalue="Gradle.F:/STUDIES/MASTERS_SEM_4/MonographicSubject/books/book-cataloq/build.gradle (1)" />
-        <item itemvalue="Gradle.F:/STUDIES/MASTERS_SEM_4/MonographicSubject/books/book-cataloq/build.gradle" />
-        <item itemvalue="JUnit.BooksApplicationTests.contextLoads" />
-        <item itemvalue="JUnit.BooksApplicationTests" />
+        <item itemvalue="JUnit.UserUnitTest" />
+        <item itemvalue="JUnit.UserUnitTest.addNewUserTest" />
       </list>
     </recent_temporary>
   </component>
@@ -230,9 +173,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="27" key="#Assign_Data_Sources/0.0.1366.738@0.0.1366.738" timestamp="1591542084120" />
-    <state x="1918" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591026143399">
-      <screen x="1366" y="0" width="1920" height="1050" />
+    <state x="274" y="48" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591637066855">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
+    <state x="274" y="48" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591637066855" />
     <state x="1918" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591026143399" />
     <state x="544" y="157" key="#com.intellij.ide.util.MemberChooser" timestamp="1591542601236">
       <screen x="0" y="0" width="1366" height="738" />
@@ -248,61 +192,62 @@
     </state>
     <state x="2122" y="384" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590758901019" />
     <state x="538" y="270" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.738@0.0.1366.738" timestamp="1591544984725" />
-    <state x="2070" y="6" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1590758877065">
-      <screen x="1366" y="0" width="1920" height="1050" />
+    <state x="501" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1591637553555">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
+    <state x="501" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591637553555" />
     <state x="2070" y="6" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590758877065" />
     <state x="2106" y="280" key="FileChooserDialogImpl" timestamp="1590136295070">
       <screen x="1366" y="0" width="1920" height="1050" />
     </state>
     <state x="526" y="197" key="FileChooserDialogImpl/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1585488706779" />
     <state x="2106" y="280" key="FileChooserDialogImpl/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590136295070" />
-    <state width="1323" height="252" key="GridCell.Tab.0.bottom" timestamp="1591545166238">
+    <state width="1323" height="289" key="GridCell.Tab.0.bottom" timestamp="1591637426085">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="260" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1590578987366" />
+    <state width="1323" height="289" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591637426085" />
     <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591302522783" />
     <state width="1323" height="252" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1591545166238" />
-    <state width="1323" height="252" key="GridCell.Tab.0.center" timestamp="1591545166238">
+    <state width="1323" height="289" key="GridCell.Tab.0.center" timestamp="1591637426084">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="260" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1590578987366" />
+    <state width="1323" height="289" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591637426084" />
     <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591302522783" />
     <state width="1323" height="252" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1591545166238" />
-    <state width="1323" height="252" key="GridCell.Tab.0.left" timestamp="1591545166238">
+    <state width="1323" height="289" key="GridCell.Tab.0.left" timestamp="1591637426084">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="260" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1590578987365" />
+    <state width="1323" height="289" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591637426084" />
     <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591302522783" />
     <state width="1323" height="252" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1591545166238" />
-    <state width="1323" height="252" key="GridCell.Tab.0.right" timestamp="1591545166238">
+    <state width="1323" height="289" key="GridCell.Tab.0.right" timestamp="1591637426085">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="260" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1590578987366" />
+    <state width="1323" height="289" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591637426085" />
     <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591302522783" />
     <state width="1323" height="252" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1591545166238" />
-    <state width="1323" height="252" key="GridCell.Tab.1.bottom" timestamp="1591537699114">
+    <state width="1323" height="227" key="GridCell.Tab.1.bottom" timestamp="1591636059526">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="260" key="GridCell.Tab.1.bottom/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1590578987367" />
+    <state width="1323" height="227" key="GridCell.Tab.1.bottom/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591636059526" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591302522783" />
     <state width="1323" height="252" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1591537699114" />
-    <state width="1323" height="252" key="GridCell.Tab.1.center" timestamp="1591537699113">
+    <state width="1323" height="227" key="GridCell.Tab.1.center" timestamp="1591636059526">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="260" key="GridCell.Tab.1.center/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1590578987366" />
+    <state width="1323" height="227" key="GridCell.Tab.1.center/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591636059526" />
     <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591302522783" />
     <state width="1323" height="252" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1591537699113" />
-    <state width="1323" height="252" key="GridCell.Tab.1.left" timestamp="1591537699113">
+    <state width="1323" height="227" key="GridCell.Tab.1.left" timestamp="1591636059526">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="260" key="GridCell.Tab.1.left/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1590578987366" />
+    <state width="1323" height="227" key="GridCell.Tab.1.left/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591636059526" />
     <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591302522783" />
     <state width="1323" height="252" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1591537699113" />
-    <state width="1323" height="252" key="GridCell.Tab.1.right" timestamp="1591537699114">
+    <state width="1323" height="227" key="GridCell.Tab.1.right" timestamp="1591636059526">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="260" key="GridCell.Tab.1.right/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1590578987366" />
+    <state width="1323" height="227" key="GridCell.Tab.1.right/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591636059526" />
     <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591302522783" />
     <state width="1323" height="252" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1591537699114" />
     <state width="1877" height="352" key="GridCell.Tab.2.bottom" timestamp="1591302522783">
@@ -325,15 +270,16 @@
       <screen x="1366" y="0" width="1920" height="1050" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590139119089" />
-    <state x="328" y="23" key="SettingsEditor" timestamp="1591467944523">
+    <state x="328" y="23" key="SettingsEditor" timestamp="1591632350676">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
+    <state x="328" y="23" key="SettingsEditor/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591632350676" />
     <state x="1827" y="167" key="SettingsEditor/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590775540409" />
     <state x="328" y="23" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1591467944523" />
-    <state x="467" y="245" key="com.intellij.ide.util.TipDialog" timestamp="1591529158472">
+    <state x="467" y="245" key="com.intellij.ide.util.TipDialog" timestamp="1591636082729">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="467" y="245" key="com.intellij.ide.util.TipDialog/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1590578871966" />
+    <state x="467" y="245" key="com.intellij.ide.util.TipDialog/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591636082729" />
     <state x="467" y="245" key="com.intellij.ide.util.TipDialog/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591289591423" />
     <state x="467" y="245" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1591529158472" />
     <state x="2022" y="123" width="607" height="804" key="find.popup" timestamp="1590775544141">
@@ -360,6 +306,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/pbinas/books/service/impl/UserServiceImpl.java</url>
           <line>41</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/pbinas/books/unitTests/UserUnitTest.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

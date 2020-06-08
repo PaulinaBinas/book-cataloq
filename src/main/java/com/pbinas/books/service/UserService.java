@@ -14,7 +14,7 @@ public interface UserService {
 
     void saveUser(UserEntity user);
 
-    void addUser(String username, String password);
+    UserEntity addUser(String username, String password);
 
     UserEntity getLoggedInUser();
 }
