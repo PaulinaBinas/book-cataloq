@@ -13,8 +13,6 @@ public interface BookService {
 
     void addBook(BookEntity book);
 
-    void save(BookEntity book);
-
     void removeBook(long id);
 
     void modifyBook(BookEntity book);
@@ -22,4 +20,6 @@ public interface BookService {
     void removeList(long id, long listId);
 
     void removeList(long listId);
+
+    void addList(long bookId,BookListEntity list);
 }

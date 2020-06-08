@@ -34,8 +34,7 @@ public class BookListServiceImpl implements BookListService {
             if(!bookList.getBooks().stream().anyMatch(b -> b.getId() == bookId)) {
                 bookList.getBooks().add(book);
                 this.bookListRepository.save(bookList);
-                book.getLists().add(bookList);
-                this.bookService.save(book);
+                this.bookService.addList(bookId, bookList);
             }
         }
     }

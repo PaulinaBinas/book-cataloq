@@ -1,5 +1,8 @@
 package com.pbinas.books.config;
 
+import com.pbinas.books.repository.AuthorRepository;
+import com.pbinas.books.repository.BookListRepository;
+import com.pbinas.books.repository.BookRepository;
 import com.pbinas.books.repository.UserRepository;
 import com.pbinas.books.service.AuthorService;
 import com.pbinas.books.service.BookListService;
@@ -23,6 +26,15 @@ public class TestConfig {
 
     @MockBean
     public UserRepository testUserRepository;
+
+    @MockBean
+    public BookRepository testBookRepository;
+
+    @MockBean
+    public BookListRepository testBookListRepository;
+
+    @MockBean
+    public AuthorRepository testAuthorRepository;
 
     @Bean
     @Primary

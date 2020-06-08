@@ -6,7 +6,6 @@ import com.pbinas.books.repository.BookRepository;
 import com.pbinas.books.service.AuthorService;
 import com.pbinas.books.service.BookListService;
 import com.pbinas.books.service.BookService;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -36,15 +35,10 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public void save(BookEntity book) {
-        this.bookRepository.save(book);
-    }
-
-    @Override
     public void addBook(BookEntity book) {
         book.getAuthors().stream().forEach(author -> authorService.save(author));
         book.setDateAdded(LocalDate.now());
-        this.save(book);
+        this.bookRepository.save(book);
     }
 
     @Override
@@ -62,7 +56,7 @@ public class BookServiceImpl implements BookService {
     public void removeList(long id, long listId) {
         BookEntity book = this.findById(id);
         book.getLists().removeIf(list -> list.getId() == listId);
-        this.save(book);
+        this.bookRepository.save(book);
     }
 
     @Override
@@ -71,5 +65,12 @@ public class BookServiceImpl implements BookService {
             book.getLists().removeIf(list -> list.getId() == listId);
             this.bookRepository.save(book);
         });
+    }
+
+    @Override
+    public void addList(long bookId, BookListEntity list) {
+        BookEntity book = this.bookRepository.findDistinctById(bookId);
+        book.getLists().add(list);
+        this.bookRepository.save(book);
     }
 }
