@@ -61,6 +61,7 @@ public class BookListIntegrationTest extends AbstractIntegrationTest {
         bookList.setTitle(title);
         bookList.setDescription(desc);
         bookList.setId(id);
+        bookList.setBooks(new ArrayList<>());
 
         when(this.testBookListRepository.findDistinctById(id)).thenReturn(bookList);
 

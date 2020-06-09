@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.stream.Collectors;
 
 @RestController
@@ -48,11 +49,15 @@ public class BookRestController {
     }
 
     private BookTo convertToDto(BookEntity bookEntity) {
-        BookTo bookTo = this.mapper.map(bookEntity, BookTo.class);
-        List<String> lists = new ArrayList<>();
-        bookEntity.getLists().forEach(list -> lists.add(list.getTitle()));
-        bookTo.setLists(lists);
-        return bookTo;
+        if(!(bookEntity == null)) {
+            BookTo bookTo = this.mapper.map(bookEntity, BookTo.class);
+            List<String> lists = new ArrayList<>();
+            bookEntity.getLists().forEach(list -> lists.add(list.getTitle()));
+            bookTo.setLists(lists);
+            return bookTo;
+        } else {
+            throw new NoSuchElementException();
+        }
     }
 
     private BookEntity convertToEntity(BookTo bookTo) { return this.mapper.map(bookTo, BookEntity.class); }

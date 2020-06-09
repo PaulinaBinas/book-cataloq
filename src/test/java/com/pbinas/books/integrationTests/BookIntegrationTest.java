@@ -8,6 +8,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.test.web.servlet.MvcResult;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -63,6 +64,7 @@ public class BookIntegrationTest extends AbstractIntegrationTest {
         String title = "test";
         BookEntity book = new BookEntity();
         book.setTitle(title);
+        book.setLists(new ArrayList<>());
         when(this.testBookRepository.findDistinctById(11L)).thenReturn(book);
 
         this.mockMvc.perform(get("/book").param("id", "11")
@@ -74,6 +76,7 @@ public class BookIntegrationTest extends AbstractIntegrationTest {
         String title = "test";
         BookEntity book = new BookEntity();
         book.setTitle(title);
+        book.setLists(new ArrayList<>());
         List<BookEntity> books = Collections.singletonList(book);
         when(this.testBookRepository.findAll()).thenReturn(books);
 
