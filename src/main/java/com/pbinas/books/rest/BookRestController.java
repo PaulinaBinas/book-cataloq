@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -47,10 +48,12 @@ public class BookRestController {
     }
 
     private BookTo convertToDto(BookEntity bookEntity) {
-        return this.mapper.map(bookEntity, BookTo.class);
+        BookTo bookTo = this.mapper.map(bookEntity, BookTo.class);
+        List<String> lists = new ArrayList<>();
+        bookEntity.getLists().forEach(list -> lists.add(list.getTitle()));
+        bookTo.setLists(lists);
+        return bookTo;
     }
 
-    private BookEntity convertToEntity(BookTo bookTo) {
-        return this.mapper.map(bookTo, BookEntity.class);
-    }
+    private BookEntity convertToEntity(BookTo bookTo) { return this.mapper.map(bookTo, BookEntity.class); }
 }

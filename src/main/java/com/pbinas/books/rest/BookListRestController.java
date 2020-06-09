@@ -1,6 +1,7 @@
 package com.pbinas.books.rest;
 
 import com.pbinas.books.model.dto.BookListTo;
+import com.pbinas.books.model.dto.BookTo;
 import com.pbinas.books.model.entity.BookListEntity;
 import com.pbinas.books.service.BookListService;
 import com.pbinas.books.service.BookService;
@@ -8,6 +9,7 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -57,7 +59,11 @@ public class BookListRestController {
     }
 
     private BookListTo convertToDto(BookListEntity bookListEntity) {
-        return this.mapper.map(bookListEntity, BookListTo.class);
+        BookListTo bookListTo = this.mapper.map(bookListEntity, BookListTo.class);
+        List<String> books = new ArrayList<>();
+        bookListEntity.getBooks().forEach(book -> books.add(book.getTitle()));
+        bookListTo.setBooks(books);
+        return bookListTo;
     }
 
     private BookListEntity convertToEntity(BookListTo bookListTo) {

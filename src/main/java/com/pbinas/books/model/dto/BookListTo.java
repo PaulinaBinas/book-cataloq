@@ -15,5 +15,5 @@ public class BookListTo {
 
     private String description;
 
-    private List<BookEntity> books;
+    private List<String> books;
 }

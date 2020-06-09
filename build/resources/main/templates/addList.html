@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/addbook.css}" >
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Book cataloq</title>
+</head>
+<body th:style="'background: url('+@{../books.jpg}+') no-repeat center;'">
+<div class="content-box" sec:authorize="isAuthenticated()">
+    <h1>Add List</h1>
+    <form id="add-list-form" method="post" th:action="@{/books}">
+        <input type="text" id="title" name="title" autofocus="autofocus" placeholder="Title">
+        <input type="text" id="description" name="description" placeholder="Description">
+        <button type="submit" class="w3-button w3-green w3-hover-white">Add list</button>
+    </form>
+    <a href="/books"><button class="center">Cancel</button></a>
+    <form th:action="@{/logout}" method="post">
+        <button class="center" type="submit" value="Logout">Logout</button>
+    </form>
+</div>
+<div class="content-box" sec:authorize="!isAuthenticated()">
+    <p>You are not authorized to access this page!</p>
+    <a href="/"><button>Home</button></a>
+
+</div>
+<script>
+    var clicked = false;
+
+    $("#add-list-form").on('submit', function(e) {
+        e.preventDefault();
+        if(!clicked) {
+            clicked = true;
+            var formData = $("#add-list-form").serializeArray();
+            var list = {
+                title: formData[0].value,
+                description: formData[1].value,
+                books: [],
+            };
+
+            list = JSON.stringify(list);
+
+
+            $.ajax({
+                url: 'http://localhost:8080/list',
+                type: 'POST',
+                dataType: 'json',
+                contentType: 'application/json',
+                data: list,
+                done: function () {
+                    console.log('heyy');
+                }
+            });
+
+            setTimeout(function () {
+                window.location.pathname = window.location.pathname.replace('/lists/add', '../books');
+            }, 1000);
+        }
+    });
+</script>
+</body>
+</html>

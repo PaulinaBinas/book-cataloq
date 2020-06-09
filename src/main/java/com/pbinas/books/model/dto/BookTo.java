@@ -33,5 +33,5 @@ public class BookTo {
 
     private LocalDate dateAdded;
 
-    private List<BookListEntity> lists;
+    private List<String> lists;
 }

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/books.css}" >
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Book cataloq</title>
+</head>
+<body th:style="'background: url('+@{books.jpg}+') no-repeat center;'">
+    <div class="content-box" sec:authorize="isAuthenticated()">
+        <div id="headings">
+            <h1 class="selected top-button" onClick="changePage('books')">Books</h1>
+            <h1 class="top-button" onClick="changePage('lists')">Lists</h1>
+        </div>
+        <button id="back-button" onclick="hideDetails()"class="w3-button w3-circle w3-white" title="Back" style="display: none">
+            <span id="back"><</span>
+        </button>
+        <table id="books-table">
+            <tr th:each="book : ${books}" onclick="showBookDetails(this)">
+                <td class="title" style="width: 60%"><span th:text="${book.title}">, </span></td>
+                <td class="author" style="width: 40%" th:each="author : ${book.authors}">
+                    <span th:text="${author.name}"></span>
+                    <span>, </span>
+                    <span th:text="${author.surname}"></span>
+                </td>
+                <td>
+                    <form th:onsubmit="'removeBook(event,'+${book.id}+')'" method="delete" th:action="@{/book}">
+                        <button class="w3-button w3-circle w3-red" type="submit">
+                            <span class="minus">-</span>
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <table id="lists-table">
+            <tr th:each="list : ${lists}">
+                <td class="list-title" onclick="showListDetails(this)"><span th:text="${list.title}">, </span></td>
+                <td>
+                    <form th:onsubmit="'removeList(event,'+${list.id}+')'" method="delete" th:action="@{/list}">
+                        <button class="w3-button w3-circle w3-red" type="submit">
+                            <span class="minus">-</span>
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <table id="books-details">
+            <tr th:each="book : ${books}"  style="display: none">
+                <td class="book-details">
+                    <p>Title: <span th:text="${book.title}"></span></p>
+                    <span>Authors: </span>
+                    <span th:each="author : ${book.authors}">
+                        <span th:text="${author.name}"></span>
+                        <span th:text="${author.surname}"></span>
+                    </span>
+                    <p>Description: <span th:text="${book.description}"></span></p>
+                    <p>ISBN: <span th:text="${book.isbn}"></span></p>
+                    <p>Language: <span th:text="${book.language}"></span></p>
+                    <p>Publication year: <span th:text="${book.publicationYear}"></span></p>
+                    <p>Publisher: <span th:text="${book.publisher}"></span></p>
+                    <p>Date added: <span th:text="${book.dateAdded}"></span></p>
+                    <p>Lists:</p>
+                    <ul>
+                        <li th:each="list : ${book.lists}">
+                            <span th:text="${list.title}"></span>
+                            <span>
+                                <button class="w3-button w3-circle w3-red" th:onclick="'removeBookFromList('+${book.id}+','+${list.id}+')'">
+                                    <span class="minus">-</span>
+                                </button>
+                            </span>
+                        </li>
+                    </ul>
+                    <form id="add-to-list-form" onsubmit="addBookToList(event)" method="post" th:action="@{/list}">
+                        <input style="display: none" id="bookId" name="bookId" th:value="${book.id}">
+                        <label>Add book to list: </label>
+                        <select name="listId" id="listId" required>
+                            <option value="">None</option>
+                            <option th:each="list : ${lists}" th:value="${list.id}">
+                                <span th:text="${list.title}"></span>
+                            </option>
+                        </select>
+                        <button type="submit" class="w3-button w3-green">Add</button>
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <table id="lists-details">
+            <tr th:each="list : ${lists}"  style="display: none">
+                <td class="list-details">
+                    <p>Title: <span th:text="${list.title}"></span></p>
+                    <p>Description:</p>
+                    <p th:text="${list.description}"></p>
+                    <p>Books:</p>
+                    <ul>
+                        <li th:each="book : ${list.books}">
+                            <span th:text="${book.title}"></span>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <a href="/books/add" id="add-button"><button class="w3-button w3-circle w3-green" title="Add new">
+            <span id="plus">+</span>
+        </button></a>
+        <form th:action="@{/logout}" method="post" id="logout-form">
+            <input id="logout" type="submit" value="Logout"/>
+        </form>
+    </div>
+    <div class="content-box" sec:authorize="!isAuthenticated()">
+        <p class="text">You are not authorized to access this page!</p>
+        <a href="/"><button id="home">Home</button></a>
+    </div>
+<script>
+    var currentPage = 'books';
+    document.getElementById("lists-table").style.display = "none";
+    function changePage(page) {
+        if(currentPage != page) {
+            hideDetails();
+            if(page == 'books') {
+                document.getElementsByClassName("top-button")[0].classList.add("selected");
+                document.getElementsByClassName("top-button")[1].classList.remove("selected");
+                document.getElementById("lists-table").style.display = "none";
+                document.getElementById("books-table").style.display = "table";
+                document.getElementById("add-button").href = "/books/add";
+                currentPage = 'books';
+            } else {
+                document.getElementsByClassName("top-button")[1].classList.add("selected");
+                document.getElementsByClassName("top-button")[0].classList.remove("selected");
+                document.getElementById("books-table").style.display = "none";
+                document.getElementById("lists-table").style.display = "table";
+                document.getElementById("add-button").href = "/lists/add"
+                currentPage = 'lists';
+            }
+            hideDetails();
+        }
+    }
+
+    function removeBook(e, idToDelete)  {
+        e.preventDefault();
+        $.ajax({
+            url: 'http://localhost:8080/book',
+            type: 'DELETE',
+            data: {"id": idToDelete},
+            success: function () {
+                location.reload();
+            }
+        });
+    };
+
+    function removeList(e, idToDelete)  {
+        e.preventDefault();
+        $.ajax({
+            url: 'http://localhost:8080/list',
+            type: 'DELETE',
+            data: {"id": idToDelete},
+            success: function () {
+                location.reload();
+            }
+        });
+    };
+    
+    function showBookDetails(element) {
+        document.getElementById("books-table").style.display = "none";
+        document.getElementById("books-details").childNodes.item(1).childNodes.forEach(e => {
+            if(e.hasChildNodes()) {
+                e.style.display = "none"
+            }
+        });
+        document.getElementById("books-details").childNodes.item(1).childNodes.item(element.rowIndex*2).style.display = "table-row";
+        document.getElementById("back-button").style.display = "inline-block";
+        document.getElementById("add-button").childNodes.item(0).style.display = "none";
+    }
+
+    function showListDetails(element) {
+        document.getElementById("lists-table").style.display = "none";
+        document.getElementById("lists-details").childNodes.item(1).childNodes.forEach(e => {
+            if(e.hasChildNodes()) {
+                e.style.display = "none"
+            }
+        });
+        document.getElementById("lists-details").childNodes.item(1).childNodes.item(element.parentNode.rowIndex*2).style.display = "table-row";
+        document.getElementById("back-button").style.display = "inline-block";
+        document.getElementById("add-button").childNodes.item(0).style.display = "none";
+    }
+
+    function hideDetails() {
+        if(currentPage == 'books') {
+            document.getElementById("books-details").childNodes.item(1).childNodes.forEach(e => {
+                if(e.hasChildNodes()) {
+                    e.style.display = "none"
+                }
+            });
+            document.getElementById("books-table").style.display = "table";
+        } else {
+            document.getElementById("lists-details").childNodes.item(1).childNodes.forEach(e => {
+                if(e.hasChildNodes()) {
+                    e.style.display = "none"
+                }
+            });
+            document.getElementById("lists-table").style.display = "table";
+        }
+        document.getElementById("back-button").style.display = "none";
+        document.getElementById("add-button").childNodes.item(0).style.display = "block";
+    }
+
+    function addBookToList(e) {
+        e.preventDefault();
+        var bookId;
+        var index;
+        var listId;
+        document.getElementById("books-details").childNodes.item(1).childNodes.item(3)
+        document.getElementById("books-details").childNodes.item(1).childNodes.forEach(e => {
+            if(e != null && e.style != null && e.style.display != "none") {
+                bookId = e.childNodes.item(1).childNodes.item(23).childNodes.item(1).value;
+                index = e.childNodes.item(1).childNodes.item(23).childNodes.item(5).selectedIndex;
+                listId = e.childNodes.item(1).childNodes.item(23).childNodes.item(5).options[index].value;
+            }
+        });
+        var postUrl = 'http://localhost:8080/list/' + listId + '/addBook/' + bookId;
+        $.ajax({
+            url: postUrl,
+            type: 'POST',
+            success: function () {
+                location.reload();
+            }
+        });
+    }
+
+    function removeBookFromList(bookId, listId) {
+        var deleteUrl = 'http://localhost:8080/list/' + listId + '/removeBook/' + bookId;
+        $.ajax({
+            url: deleteUrl,
+            type: 'DELETE',
+            success: function () {
+                location.reload();
+            }
+        });
+    }
+</script>
+</body>
+</html>

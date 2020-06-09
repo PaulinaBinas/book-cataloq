@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Success</title>
+</head>
+<body>
+    <div sec:authorize="isAuthenticated()">
+        <h1>Successful login!</h1>
+    </div>
+    <div sec:authorize="!isAuthenticated()">
+        <p>You are not authorized to access this page!</p>
+        <a href="./"><button>Home</button></a>
+    </div>
+    <script>
+        window.location.pathname = window.location.pathname.replace('/success', '../books')
+    </script>
+</body>
+</html>

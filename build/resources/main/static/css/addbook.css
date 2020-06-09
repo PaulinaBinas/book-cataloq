@@ -1,0 +1,111 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+#background {
+    width: 100%;
+}
+
+.content-box {
+    margin: auto;
+    height: fit-content;
+    color: white;
+    padding: 25px;
+    width: 75%;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: -webkit-radial-gradient(circle, black 50%, rgba(0,0,0,0));
+}
+
+.content-box p {
+    text-align: center;
+}
+
+.content-box button {
+    margin: 10px auto;
+}
+
+h1 {
+    font-family: 'Lobster', cursive !important;
+    font-size: 40px !important;
+    text-align: center;
+    color: white;
+    margin: 25px;
+    position: relative;
+    height: fit-content;
+}
+
+a {
+    text-decoration: none;
+}
+
+button, input {
+    display: block;
+    height: fit-content;
+    padding: 10px;
+    width: 100px;
+    position: relative;
+    margin: 25px auto;
+    background-color: rgba(221, 221, 221);
+    border: none;
+}
+
+a .w3-button {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 10px auto;
+    font-size: 41px;
+    color: white !important;
+    font-weight: bold;
+}
+
+button:active {
+    border: burlywood;
+    box-shadow: rgba(0,0,0,0.7) 1px 1px  4px inset;
+}
+
+button:hover {
+    color: orange;
+}
+
+#logout, #home {
+    margin: 10px auto;
+}
+
+#add-book-form {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 700px;
+    margin: auto;
+}
+
+#add-book-form input {
+    flex: 1 0 48%;
+    margin: 5px;
+}
+
+#add-book-form button {
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: 10px auto;
+    width: 300px;
+}
+
+.center {
+    margin: 10px auto;
+    width: 300px;
+}
+
+#add-list-form input, #add-list-form button {
+    width: 300px;
+    margin: 10px auto;
+    display: block;
+}

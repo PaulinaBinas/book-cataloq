@@ -1,0 +1,197 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+#background {
+    width: 100%;
+}
+
+.content-box {
+    margin: auto;
+    height: fit-content;
+    color: white;
+    padding: 25px;
+    width: 75%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: -webkit-radial-gradient(circle, black 50%, rgba(0,0,0,0));
+    height: 90%;
+}
+
+h1 {
+    font-family: 'Lobster', cursive !important;
+    font-size: 40px !important;
+    text-align: center;
+    color: white;
+    margin: 25px;
+    position: relative;
+    height: fit-content;
+}
+
+a {
+    text-decoration: none;
+}
+
+button, input {
+    display: block;
+    height: fit-content;
+    padding: 10px;
+    width: 100px;
+    position: relative;
+    margin: 25px auto;
+    background-color: rgba(221, 221, 221);
+    border: none;
+}
+
+a .w3-button, #back-button {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 10px auto;
+    font-size: 41px;
+    color: white !important;
+    font-weight: bold;
+}
+
+#plus {
+    position: relative;
+    top: -18px;
+    left: -9px;
+}
+
+button:active {
+    border: burlywood;
+    box-shadow: rgba(0,0,0,0.7) 1px 1px  4px inset;
+}
+
+button:hover {
+    color: orange;
+}
+
+#logout, #home {
+    margin: 10px auto;
+}
+
+.text {
+    text-align: center;
+}
+
+table {
+    width: inherit;
+    margin: 10px auto;
+    padding-left: 40px;
+    height: initial;
+}
+
+td {
+    padding: 5px 20px;
+}
+
+#logout-form {
+    position: fixed;
+    height: fit-content;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+    margin: 25px auto 0;
+}
+
+table button {
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+}
+
+table form {
+    display: inline;
+}
+
+.minus {
+    position: relative;
+    font-size: 40px;
+    top: -26px;
+    left: -8px;
+}
+
+#headings {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.5);
+    margin: -25px -25px 25px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ffffd630;
+    height: auto;
+}
+
+#headings h1 {
+    flex-grow: 0;
+    width: 150px;
+    border-bottom: 1px solid rgba(0,0,0,0);
+    transition: 0.8s;
+    margin: auto 10px;
+}
+
+#headings h1:hover {
+    border-bottom: 1px solid gold !important;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.selected {
+    border-color: orange !important;
+    text-shadow: orange 1px 1px;
+}
+
+.list-title {
+    text-align: center;
+}
+
+.text {
+    height: auto;
+}
+
+#lists-table {
+    padding: 0;
+}
+
+#lists-table tr:hover, #books-table tr:hover {
+    cursor: pointer;
+    color: orange;
+}
+
+#back-button {
+    font-size: inherit;
+    position: absolute;
+    color: black;
+}
+
+#back {
+    color: black;
+}
+
+td.book-details {
+    height: 400px;
+    overflow-y: auto;
+    display: block;
+}
+
+td.book-details p, td.book-details ul, select {
+    height: auto;
+}
+
+#add-to-list-form button {
+    width: auto;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+

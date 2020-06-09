@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book cataloq - register</title>
+
+    <link rel="stylesheet" type="text/css" th:href="@{/css/login.css}" >
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body th:style="'background: url('+@{books.jpg}+') no-repeat center;'">
+<div id="background">
+    <div id="content-box">
+        <h1>Register</h1>
+        <div id="form-box">
+            <form id="register-form" method="post" th:action="@{/user}">
+                <input type="text" id="username" name="username" autofocus="autofocus" placeholder="Username">
+                <input type="password" id="password" name="password" placeholder="Password">
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

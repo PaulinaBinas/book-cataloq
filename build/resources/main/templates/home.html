@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/home.css}" >
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Book catalog</title>
+</head>
+<body th:style="'background: url('+@{books.jpg}+') no-repeat center;'">
+    <div id="background">
+        <div id="title-box">
+            <h1>Book catalog</h1>
+            <div id="auth-button-box">
+                <a href="/log-in"><button id="login" onclick="/login">Log in</button></a>
+                <a href="/register"><button id="register" onclick="/register">Register</button></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

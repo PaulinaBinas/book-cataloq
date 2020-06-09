@@ -2,10 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8beec6d0-2765-4413-81e6-1bab34c64260" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/model/entity/BookEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/model/entity/BookEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/model/entity/BookListEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/model/entity/BookListEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/pbinas/books/integrationTests/BookListIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pbinas/books/integrationTests/BookListIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/model/dto/BookListTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/model/dto/BookListTo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/model/dto/BookTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/model/dto/BookTo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/rest/BookListRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/rest/BookListRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pbinas/books/rest/BookRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pbinas/books/rest/BookRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/error.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +71,7 @@
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
     </option>
   </component>
@@ -81,7 +92,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="F:/Patsie/hello-world" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
     <property name="show.unlinked.gradle.project.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -101,7 +112,7 @@
       <command value="mvn -B package --file pom.xml -DskipTests" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in books">
+  <component name="RunManager" selected="Spring Boot.BooksApplication">
     <configuration name="All in books" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="books" />
       <option name="PACKAGE_NAME" value="" />
@@ -254,53 +265,53 @@
     </state>
     <state x="526" y="197" key="FileChooserDialogImpl/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1585488706779" />
     <state x="2106" y="280" key="FileChooserDialogImpl/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590136295070" />
-    <state width="1877" height="411" key="GridCell.Tab.0.bottom" timestamp="1591724674304">
+    <state width="1877" height="411" key="GridCell.Tab.0.bottom" timestamp="1591733202403">
       <screen x="1366" y="0" width="1920" height="1050" />
     </state>
     <state width="1323" height="227" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591655221000" />
-    <state width="1877" height="411" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591724674304" />
+    <state width="1877" height="411" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591733202403" />
     <state width="1323" height="252" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1591545166238" />
-    <state width="1877" height="411" key="GridCell.Tab.0.center" timestamp="1591724674304">
+    <state width="1877" height="411" key="GridCell.Tab.0.center" timestamp="1591733202402">
       <screen x="1366" y="0" width="1920" height="1050" />
     </state>
     <state width="1323" height="227" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591655221000" />
-    <state width="1877" height="411" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591724674304" />
+    <state width="1877" height="411" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591733202402" />
     <state width="1323" height="252" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1591545166238" />
-    <state width="1877" height="411" key="GridCell.Tab.0.left" timestamp="1591724674304">
+    <state width="1877" height="411" key="GridCell.Tab.0.left" timestamp="1591733202402">
       <screen x="1366" y="0" width="1920" height="1050" />
     </state>
     <state width="1323" height="227" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591655221000" />
-    <state width="1877" height="411" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591724674304" />
+    <state width="1877" height="411" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591733202402" />
     <state width="1323" height="252" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1591545166238" />
-    <state width="1877" height="411" key="GridCell.Tab.0.right" timestamp="1591724674304">
+    <state width="1877" height="411" key="GridCell.Tab.0.right" timestamp="1591733202403">
       <screen x="1366" y="0" width="1920" height="1050" />
     </state>
     <state width="1323" height="227" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591655221000" />
-    <state width="1877" height="411" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591724674304" />
+    <state width="1877" height="411" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591733202403" />
     <state width="1323" height="252" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1591545166238" />
-    <state width="1877" height="351" key="GridCell.Tab.1.bottom" timestamp="1591724631064">
+    <state width="1877" height="411" key="GridCell.Tab.1.bottom" timestamp="1591733202403">
       <screen x="1366" y="0" width="1920" height="1050" />
     </state>
     <state width="1323" height="227" key="GridCell.Tab.1.bottom/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591655221001" />
-    <state width="1877" height="351" key="GridCell.Tab.1.bottom/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591724631064" />
+    <state width="1877" height="411" key="GridCell.Tab.1.bottom/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591733202403" />
     <state width="1323" height="252" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1591537699114" />
-    <state width="1877" height="351" key="GridCell.Tab.1.center" timestamp="1591724631063">
+    <state width="1877" height="411" key="GridCell.Tab.1.center" timestamp="1591733202403">
       <screen x="1366" y="0" width="1920" height="1050" />
     </state>
     <state width="1323" height="227" key="GridCell.Tab.1.center/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591655221000" />
-    <state width="1877" height="351" key="GridCell.Tab.1.center/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591724631063" />
+    <state width="1877" height="411" key="GridCell.Tab.1.center/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591733202403" />
     <state width="1323" height="252" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1591537699113" />
-    <state width="1877" height="351" key="GridCell.Tab.1.left" timestamp="1591724631063">
+    <state width="1877" height="411" key="GridCell.Tab.1.left" timestamp="1591733202403">
       <screen x="1366" y="0" width="1920" height="1050" />
     </state>
     <state width="1323" height="227" key="GridCell.Tab.1.left/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591655221000" />
-    <state width="1877" height="351" key="GridCell.Tab.1.left/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591724631063" />
+    <state width="1877" height="411" key="GridCell.Tab.1.left/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591733202403" />
     <state width="1323" height="252" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1591537699113" />
-    <state width="1877" height="351" key="GridCell.Tab.1.right" timestamp="1591724631063">
+    <state width="1877" height="411" key="GridCell.Tab.1.right" timestamp="1591733202403">
       <screen x="1366" y="0" width="1920" height="1050" />
     </state>
     <state width="1323" height="227" key="GridCell.Tab.1.right/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591655221000" />
-    <state width="1877" height="351" key="GridCell.Tab.1.right/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591724631063" />
+    <state width="1877" height="411" key="GridCell.Tab.1.right/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591733202403" />
     <state width="1323" height="252" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1591537699114" />
     <state width="1877" height="352" key="GridCell.Tab.2.bottom" timestamp="1591302522783">
       <screen x="1366" y="0" width="1920" height="1050" />
@@ -322,11 +333,11 @@
       <screen x="1366" y="0" width="1920" height="1050" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590139119089" />
-    <state x="1827" y="167" key="SettingsEditor" timestamp="1591711439102">
+    <state x="1827" y="167" key="SettingsEditor" timestamp="1591728675766">
       <screen x="1366" y="0" width="1920" height="1050" />
     </state>
     <state x="328" y="23" key="SettingsEditor/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591632350676" />
-    <state x="1827" y="167" key="SettingsEditor/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591711439102" />
+    <state x="1827" y="167" key="SettingsEditor/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591728675766" />
     <state x="328" y="23" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1591467944523" />
     <state x="467" y="245" key="com.intellij.ide.util.TipDialog" timestamp="1591711460786">
       <screen x="0" y="0" width="1366" height="738" />
@@ -347,10 +358,10 @@
     </state>
     <state x="438" y="171" width="672" height="476" key="run.anything.popup/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1591654853434" />
     <state x="1982" y="243" width="672" height="677" key="run.anything.popup/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590137528705" />
-    <state x="1989" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1590775563958">
+    <state x="1989" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1591733091505">
       <screen x="1366" y="0" width="1920" height="1050" />
     </state>
-    <state x="1989" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1590775563958" />
+    <state x="1989" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1591733091505" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -400,7 +411,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/pbinas/books/rest/BookListRestController.java</url>
-          <line>50</line>
+          <line>52</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
