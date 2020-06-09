@@ -35,6 +35,7 @@ public class BookEntity {
 
     private LocalDate dateAdded;
 
+    @ToString.Exclude
     @ManyToMany
     private List<BookListEntity> lists;
 }

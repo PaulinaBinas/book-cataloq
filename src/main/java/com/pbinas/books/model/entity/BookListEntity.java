@@ -20,6 +20,7 @@ public class BookListEntity {
 
     private String description;
 
+    @ToString.Exclude
     @ManyToMany
     private List<BookEntity> books;
 }
